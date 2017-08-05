@@ -1,0 +1,136 @@
+.thead{
+	font-size: 18px;
+	text-indent: 30px;
+}
+.table .tbody{
+	padding: 30px 0 50px 0;
+}
+.line{
+	line-height: 40px;
+	padding: 10px 0;
+}
+.line-left{
+	float: left;
+	width: 30%;
+	height: 40px;
+	text-align: right;
+	line-height: 40px;
+	padding-right: 20px;
+	color: #2d384a;
+}
+.line-left em{
+	color: #f9844b;
+	margin-right: 5px;
+}
+.line-right{
+	padding-left: 30%;
+}
+.line-right .input-box{
+	display: inline;
+}
+.line-right .input-box .input{
+	width: 380px;
+}
+.line-right .sorting .input{
+	width: 50px;
+	height: 28px;
+	line-height: 28px;
+	padding: 0;
+	text-align: center;
+	margin: 0 5px;
+	float: left;
+	margin-top: 6px;
+}
+.line-right .sorting a{
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #d8dee3;
+	background: #fafcff;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	color: #9ba3b0;
+	font-size: 20px;
+	float: left;
+	margin-top: 6px;
+}
+.line-right .sorting a:hover{
+	background: #fff;
+	color: #23cdb7;
+	border-color: #23cdb7;
+}
+.line-right .error-tips{
+	display: inline;
+	color: #f9844b;
+	margin-left: 10px;
+}
+.drop-down .select{
+	width: 145px;
+}
+.selectimg{
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+.selectimg a{
+	display: block;
+	width: 120px;
+	height: 40px;
+	border-radius: 5px;
+	background: #40a2da;
+	color: #fff;
+	text-align: center;
+}
+.selectimg a:hover{
+	background: #52b0e6;
+}
+.selectimg a i{
+	width: 18px;
+	height: 16px;
+	display: inline-block;
+	background: url(../images/icon.png) no-repeat -428px -135px;
+	vertical-align: sub;
+	margin-right: 5px;
+}
+.img-tips{
+	display: inline-block;
+	line-height: 20px;
+	margin-left: 10px;
+	color: #9ba3b0;
+	font-size: 12px;
+}
+.img-tips em{
+	color: #f9844b;
+}
+.imgurl{
+	padding-left: 20px;
+	line-height: 20px;
+	margin-top: -5px;
+}
+.img-view{
+	padding-left: 20px;
+	width: 402px;
+}
+.img-view img{
+	max-width: 100%;
+	display: inherit;
+}
+.last-tips{
+	color: #f9844b;
+	line-height: 30px;
+	margin-top: -10px;
+}
+.submit a{
+	width: 160px;
+	height: 40px;
+	display: inline-block;
+	background: #23cdb7;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+}
+.submit a:hover{
+	background: #1bbba6;
+}

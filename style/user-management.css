@@ -1,0 +1,115 @@
+.table .zcsj{
+	width: 10%;
+}
+.table .name{
+	width: 10%;
+}
+.table .gender{
+	width: 5%;
+}
+.table .phone{
+	width: 13%;
+}
+.table .birthday{
+	width: 10%;
+}
+.table .marital{
+	width: 8%
+}
+.table .glzh{
+	width: 8%
+}
+.table .tjbg{
+	width: 8%
+}
+.table .jzbl{
+	width: 8%
+}
+.table .cz{
+	width: 20%
+}
+.tbody .glzh,.tbody .tjbg,.tbody .jzbl{
+	color: #4b6cb9;
+}
+.tbody .glzh a,.tbody .tjbg a,.tbody .jzbl a{
+	color: #4b6cb9;
+}
+.tbody .glzh a:hover,.tbody .tjbg a:hover,.tbody .jzbl a:hover{
+	text-decoration: underline;
+}
+.accountbox{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	width: 600px;
+	height: auto;
+	z-index: 999;
+	display: none;
+}
+.accountbox .account-title{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	background: #7b8ba5;
+	color: #ffffff;
+	border-radius: 5px 5px 0 0;
+	text-indent: 20px;
+}
+.accountbox .account-title .close{
+	float: right;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	background: url(../images/icon.png) no-repeat -478px -256px;
+	cursor: pointer;
+	margin: 17px 20px 0 0;
+}
+.accountbox .account-content{
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	background: #fff;
+	padding-bottom: 30px;
+}
+.accountbox .account-content .line{
+	display: block;
+	margin: 0 20px;
+	border-bottom: 1px solid #e2e5ea;
+	color: #646c7c;
+	font-size: 0;
+	line-height: 0;
+}
+.accountbox .account-content .line:first-child{
+	color:#9ba3b0;
+}
+.accountbox .account-content .line div{
+	display: inline-block;
+	width: 25%;
+	font-size: 14px;
+	line-height: 50px;
+	text-align: center;
+}
+.accountbox .account-btns{
+	width: 100%;
+	height: auto;
+	padding-bottom: 30px;
+	border-radius: 0 0 5px 5px;
+	background: #fff;
+	text-align: center;
+}
+.accountbox .account-btns a{
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	background: #23cdb7;
+	color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 0 #dedede;
+	margin: 0 50px;
+	font-size: 16px;
+}
+.accountbox .account-btns a:hover{
+	background: #1bbba6;
+}

@@ -1,0 +1,165 @@
+.table .jgh{
+	width: 20%;
+}
+.table .jgmc{
+	width: 34%;
+}
+.table .lxdh{
+	width: 13%;
+}
+.table .skfs{
+	width: 13%;
+}
+.table .cz{
+	width: 20%;
+}
+.table .check{
+	width: 10%
+}
+.table .name{
+	width: 25%
+}
+.table .gender{
+	width: 15%
+}
+.table .tel{
+	width: 30%
+}
+.editbox{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	width: 560px;
+	height: auto;
+	z-index: 999;
+	display: none;
+}
+.editbox .edit-title{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	background: #7b8ba5;
+	color: #ffffff;
+	border-radius: 5px 5px 0 0;
+	text-indent: 20px;
+}
+.editbox .edit-title .close{
+	float: right;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	background: url(../images/icon.png) no-repeat -478px -256px;
+	cursor: pointer;
+	margin: 17px 20px 0 0;
+}
+.editbox .edit-content{
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	background: #fff;
+	padding-top: 30px;
+}
+.editbox .edit-content .line{
+	padding: 10px 0;
+}
+.editbox .edit-content .line-left{
+	line-height: 40px;
+	display: inline-block;
+	width: 130px;
+	height: 40px;
+	text-align: right;
+}
+.editbox .edit-content .line-right{
+	line-height: 40px;
+	display: inline-block;
+	width: 380px;
+	height: 40px;
+	margin-left: 10px;
+}
+.editbox .edit-content .input{
+	width: 302px;
+}
+.editbox .edit-content .gender{
+	width: 148px;
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #d2d9df;
+	position: relative;
+	color: #9ba3b0;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 20px;
+	border-radius: 3px;
+}
+.editbox .edit-content .gender em{
+	width: 22px;
+	height: 22px;
+	display: none;
+	background: url(../images/icon.png) no-repeat -314px -156px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.editbox .edit-content .gender i{
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.editbox .edit-content .gender i.icon-male{
+	background: url(../images/icon.png) no-repeat -315px -136px;
+}
+.editbox .edit-content .gender i.icon-female{
+	background: url(../images/icon.png) no-repeat -373px -136px;
+}
+.editbox .edit-content .on{
+	width: 146px;
+	height: 36px;
+	line-height: 36px;
+	border: 2px solid #23cdb7;
+	color: #23cdb7;
+}
+.editbox .edit-content .on em{
+	display: block;
+}
+.editbox .edit-content .on i.icon-male{
+	background: url(../images/icon.png) no-repeat -339px -136px;
+}
+.editbox .edit-content .on i.icon-female{
+	background: url(../images/icon.png) no-repeat -398px -136px;
+}
+.editbox .edit-content .error-tips{
+	padding: 0 20px;
+	height: 30px;
+	display: block;
+	line-height: 25px;
+	color: #f9844b;
+	font-size: 12px;
+	text-align: center;
+}
+.editbox .edit-btns{
+	width: 100%;
+	height: auto;
+	padding-bottom: 30px;
+	border-radius: 0 0 5px 5px;
+	background: #fff;
+	text-align: center;
+}
+.editbox .edit-btns a{
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	background: #23cdb7;
+	color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 0 #dedede;
+	margin: 0 50px;
+	font-size: 16px;
+}
+.editbox .edit-btns a:hover{
+	background: #1bbba6;
+}

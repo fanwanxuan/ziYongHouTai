@@ -1,0 +1,192 @@
+.drop-down .select{
+	width: 200px;
+	font-size: 14px;
+}
+.table .check{
+	width: 10%;
+}
+.table .jsmc{
+	width: 20%;
+}
+.table .cz{
+	width: 20%;
+}
+.editbox{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	width: 500px;
+	height: auto;
+	z-index: 999;
+	display: none;
+}
+.editbox .edit-title{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	background: #7b8ba5;
+	color: #ffffff;
+	border-radius: 5px 5px 0 0;
+	text-indent: 20px;
+}
+.editbox .edit-title .close{
+	float: right;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	background: url(../images/icon.png) no-repeat -478px -256px;
+	cursor: pointer;
+	margin: 17px 20px 0 0;
+}
+.editbox .edit-content{
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	background: #fff;
+	padding-top: 30px;
+}
+.editbox .edit-content .line{
+	padding: 10px 0;
+}
+.editbox .edit-content .line-left{
+	line-height: 40px;
+	display: inline-block;
+	width: 130px;
+	height: 40px;
+	text-align: right;
+}
+.editbox .edit-content .line-right{
+	line-height: 40px;
+	display: inline-block;
+	width: 320px;
+	height: 40px;
+	margin-left: 10px;
+}
+.editbox .edit-content .input{
+	width: 200px;
+}
+.editbox .edit-content .error-tips{
+	padding: 0 20px;
+	height: 30px;
+	display: block;
+	line-height: 25px;
+	color: #f9844b;
+	font-size: 12px;
+	text-align: center;
+}
+.editbox .edit-btns{
+	width: 100%;
+	height: auto;
+	padding-bottom: 30px;
+	border-radius: 0 0 5px 5px;
+	background: #fff;
+	text-align: center;
+}
+.editbox .edit-btns a{
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	background: #23cdb7;
+	color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 0 #dedede;
+	margin: 0 50px;
+	font-size: 16px;
+}
+.editbox .edit-btns a:hover{
+	background: #1bbba6;
+}
+.authority{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	width: 500px;
+	height: auto;
+	z-index: 999;
+	display: none;
+}
+.authority .authority-title{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	background: #7b8ba5;
+	color: #ffffff;
+	border-radius: 5px 5px 0 0;
+	text-indent: 20px;
+}
+.authority .authority-title .close{
+	float: right;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	background: url(../images/icon.png) no-repeat -478px -256px;
+	cursor: pointer;
+	margin: 17px 20px 0 0;
+}
+.authority .authority-content{
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	background: #fff;
+	border-bottom: 1px solid #edf1f6;
+}
+.authority .authority-content .authority-left{
+	line-height: 40px;
+	display: inline-block;
+	width: 150px;
+	background: #edf1f6;
+	padding: 30px 0;
+	vertical-align: top;
+	text-indent: 24px;
+}
+.authority .authority-content .authority-left li{
+	cursor: pointer;
+}
+.authority .authority-content .authority-left li:hover{
+	background: #f3f6fa;
+}
+.authority .authority-content .authority-left li.on{
+	background: #fff;
+}
+.authority .authority-content .authority-right{
+	line-height: 40px;
+	display: inline-block;
+	width: 320px;
+	margin-left: 10px;
+	padding: 30px 0;
+}
+.authority .authority-content .authority-right ul{
+	display: none;
+}
+.authority .authority-content .authority-right ul.show{
+	display: block;
+}
+.authority .authority-content .authority-right .icon-check{
+	margin-right: 10px;
+}
+.authority .authority-btns{
+	width: 100%;
+	height: auto;
+	padding: 20px 0;
+	border-radius: 0 0 5px 5px;
+	background: #fff;
+	text-align: center;
+}
+.authority .authority-btns a{
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	background: #23cdb7;
+	color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 0 #dedede;
+	margin: 0 50px;
+	font-size: 16px;
+}
+.authority .authority-btns a:hover{
+	background: #1bbba6;
+}

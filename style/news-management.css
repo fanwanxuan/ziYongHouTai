@@ -1,0 +1,33 @@
+.drop-down .select{
+	width: 150px;
+}
+.table .check{
+	width: 8%
+}
+.table .wzlx{
+	width: 8%;
+}
+.table .ssbk{
+	width: 10%;
+}
+.table .wzbt{
+	width: 27%;
+}
+.table .wzbt a{
+	color: #646c7c;
+}
+.table .wzbt a:hover{
+	text-decoration: underline;
+}
+.table .fbsj{
+	width: 18%;
+}
+.table .yd{
+	width: 10%;
+}
+.table .sc{
+	width: 12%;
+}
+.table .cz{
+	width: 7%;
+}

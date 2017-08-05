@@ -1,0 +1,80 @@
+.thead{
+	font-size: 18px;
+	text-indent: 30px;
+}
+.table .tbody{
+	padding: 30px 0 50px 0;
+}
+.line{
+	line-height: 40px;
+	padding: 10px 0;
+}
+.line-left{
+	float: left;
+	width: 30%;
+	height: 40px;
+	text-align: right;
+	line-height: 40px;
+	padding-right: 20px;
+	color: #2d384a;
+}
+.line-left em{
+	color: #f9844b;
+	margin-right: 5px;
+}
+.line-right{
+	padding-left: 30%;
+}
+.line-right .number{
+	color: #9ba3b0;
+}
+.line-right .input-box{
+	display: inline;
+}
+.line-right .input-box .input{
+	width: 380px;
+}
+.line-right .bili .input{
+	width: 100px;
+}
+.line-right .bili em{
+	margin-left: 5px;
+}
+.line-right .error-tips{
+	display: inline;
+	color: #f9844b;
+	margin-left: 10px;
+}
+.radios{
+	display: inline;
+}
+.radio{
+	margin-right: 20px;
+}
+.radios span{
+	margin-left: -20px;
+	font-size: 12px;
+	color: #9ba3b0;
+}
+.bank{
+	display: none;
+}
+.last-tips{
+	color: #f9844b;
+	line-height: 30px;
+	margin-top: -10px;
+}
+.submit a{
+	width: 160px;
+	height: 40px;
+	display: inline-block;
+	background: #23cdb7;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+}
+.submit a:hover{
+	background: #1bbba6;
+}

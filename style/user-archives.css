@@ -1,0 +1,39 @@
+.find .input-box,.find .drop-down{
+	margin-right: 35px;
+}
+.find .input-box .input{
+	width: 150px;
+}
+.table .cjsj{
+	width: 17%;
+}
+.table .ly{
+	width: 5%;
+}
+.table .damc{
+	width: 20%;
+}
+.table .xm{
+	width: 10%;
+}
+.table .xb{
+	width: 5%;
+}
+.table .nl{
+	width: 6%;
+}
+.table .jzrq{
+	width: 12%;
+}
+.table .jgmc{
+	width: 20%;
+}
+.table .ck{
+	width: 5%;
+}
+.table .ck a{
+	color: #4b6cb9;
+}
+.table .ck a:hover{
+	text-decoration: underline;
+}
