@@ -83,6 +83,9 @@ jQuery(window).load(function(){
 			if(jQuery(".editbox").length>0 && !jQuery(".editbox").is(":animated")){//有编辑框时，回车确认
 				jQuery(".editbox .edit-btns a:first").click();
 			}
+			if(jQuery(".system-message").length>0 && !jQuery(".system-message").is(":animated")){//有消息弹框时，回车确认
+				jQuery(".system-message .message-btns a:first").click();
+			}
 		}
 		if(event.which === 46){//delete
 			if(jQuery(".pop-up-bg").length<1 && jQuery(".table .check-box .on").length>0){//选中删除
@@ -96,6 +99,23 @@ jQuery(window).load(function(){
 			if(jQuery(".system-message").length>0){//取消编辑框
 				jQuery(".system-message .close").click();
 			}
+		}
+	});
+	//顶部修改密码
+	jQuery(".top-menu a").live("click",function(){
+		var _btn = jQuery(this).find("i").attr("class");
+		if(_btn === "icon-changepassword"){
+			//显示密码修改框
+			var title = "修改密码";//弹窗标题
+			var content = "<div class='topset'>";//弹窗内容
+			content += "<div class='set-line'><label class='line-l' for='old'>旧密码：</label><input type='password' id='old' value='' /></div>";//弹窗内容
+			content += "<div class='set-line'><label class='line-l' for='new'>新密码：</label><input type='password' id='new' value='' /></div>";//弹窗内容
+			content += "<div class='set-line'><label class='line-l' for='confirm'>确认密码：</label><input type='password' id='confirm' value='' /></div>";//弹窗内容
+			content += "<div class='error-line'>错误提示</div>";//弹窗内容
+			content += "<div class='clear'></div></div>";//弹窗内容
+			var callback = "changepassword";//调用函数
+			var fuvalue = "";//调用函数传值
+			sysmessage(title,content,callback,fuvalue);
 		}
 	});
 });
@@ -144,4 +164,12 @@ function systips(title,content){//冒泡消息
 	jQuery(".c-box[data-num='"+_datanum+"']").fadeIn().delay(3000).fadeOut("",function(){
 		jQuery(".c-box[data-num='"+_datanum+"']").remove();
 	});
+}
+//修改密码
+function changepassword(){
+	if(!jQuery(".system-message").is(":animated")){//没有执行动画的情况下
+	//验证旧密码和提交新密码
+		messageclose();
+		systips("系统提示","密码修改成功！");
+	}
 }

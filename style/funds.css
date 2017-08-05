@@ -1,0 +1,462 @@
+.content{
+	padding-bottom: 30px;
+}
+.filter{
+	text-align: center;
+	height: 40px;
+	display: block;
+	margin: 25px 0;
+}
+.filter-btns{
+	float: right;
+	text-align: right;
+	font-size: 0;
+	line-height: 0;
+}
+.filter-btns a{
+	text-align: center;
+	background: #fff;
+	color: #727b8a;
+	line-height: 38px;
+	overflow: hidden;
+	border: 1px solid #e9edf1;
+	display: inline-block;
+	font-size: 16px;
+	padding: 0 20px;
+	border-right: none;
+}
+.filter-btns a.on{
+	background: #23cdb7;
+	color: #fff;
+}
+.filter-btns a:first-child{
+	border-radius: 3px 0 0 3px;
+}
+.filter-btns a:last-child{
+	border-radius: 0 3px 3px 0;
+}
+.filter .details{
+	float: left;
+	line-height: 0;
+	font-size: 0;
+	text-align: left;
+}
+.filter .details a{
+	background: #fff;
+	border: 1px solid #e9edf1;
+	color: #727b8a;
+	padding: 0px 20px;
+	line-height: 38px;
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 16px;
+	border-radius: 5px;
+}
+.filter .details a:hover{
+	border-color: #b9cedf;
+	box-shadow: 0 0 3px #b9cedf;
+}
+.filter .details a i{
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: text-top;
+	padding-top: 2px;
+}
+.filter .details a i.icon-receipt{
+	background: url(../images/icon.png) no-repeat -334px -206px;
+}
+.filter .details a i.icon-refunds{
+	background: url(../images/icon.png) no-repeat -372px -206px;
+}
+.filter .switch{
+	font-size: 0;
+	line-height: 0;
+	display: none;
+}
+.filter .switch span,.filter .switch a{
+	line-height: 40px;
+	vertical-align: top;
+}
+.filter .switch a.prev{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	background: url(../images/icon.png) no-repeat -178px -244px #fff;
+	border-radius: 20px 0 0 20px;
+}
+.filter .switch a.next{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	background: url(../images/icon.png) no-repeat -206px -244px #fff;
+	border-radius: 0 20px 20px 0;
+}
+.filter .switch span.now{
+	font-size: 14px;
+	color: #646c7c;
+	text-align: center;
+	width: 90px;
+	height: 40px;
+	display: inline-block;
+	background: #fff;
+}
+.overview{
+	font-size: 0;
+	line-height: 0;
+}
+.overview-box{
+	width: 18%;
+	height: 120px;
+	background: #fff;
+	border-radius: 5px;
+	display: inline-block;
+	margin-left: 2.5%;
+	position: relative;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: #646c7c;
+}
+.overview-box:first-child{
+	margin-left: 0;
+}
+.overview-box i{
+	width: 20%;
+	height: 2px;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -10%;
+}
+.overview-box i.icon-data-money{
+	background: #10c593;
+}
+.overview-box i.icon-data-turnover{
+	background: #30b2d8;
+}
+.overview-box i.icon-data-expenditure{
+	background: #e67d72;
+}
+.overview-box i.icon-data-refunds{
+	background: #837e7d;
+}
+.overview-box i.icon-data-income{
+	background: #e8ba3e;
+}
+.overview-box i.icon-data-dark-blue{
+	background: #4d73c4;
+}
+.overview-box h1{
+	padding: 30px 0 10px 0;
+}
+.overview-box li{
+	font-size: 24px;
+	color: #7588a7;
+}
+.overview-box li em{
+	font-size: 16px;
+}
+.statistics{
+	width: 100%;
+	background: #fff;
+	font-size: 0;
+	line-height: 0;
+}
+.statistics .line{
+	line-height: 50px;
+	font-size: 18px;
+	color: #2d384a;
+	border-bottom: 1px solid #dae1e8;
+	text-align: center;
+}
+.statistics .statistics-box{
+	width: 33.33%;
+	height: 95px;
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 25px;
+	color: #646c7c;
+}
+.statistics .statistics-box i{
+	width: 24px;
+	height: 3px;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -12px;
+}
+.statistics .statistics-box i.green{
+	background: #10c593;
+}
+.statistics .statistics-box i.orange{
+	background: #f9844b;
+}
+.statistics .statistics-box i.blue{
+	background: #00a0e9;
+}
+.statistics .statistics-box h1{
+	padding: 30px 0 20px 0;
+}
+.statistics .statistics-box li{
+	font-size: 24px;
+	color: #7588a7;
+	line-height: 20px;
+}
+.data-charts{
+	text-align: left;
+	font-size: 0;
+	line-height: 0;
+	width: 101.8%;
+	margin-left: -1.8%;
+}
+.order-data-charts{
+	display: none;
+}
+.charts{
+	background: #fff;
+	border-radius: 5px;
+	width: 48.2%;
+	margin-left: 1.8%;
+	font-size: 14px;
+	line-height: 20px;
+	display: inline-block;
+	margin-top: 20px;
+}
+.charts-name{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 18px;
+	color: #2d384a;
+}
+.charts-name i{
+	width: 7px;
+	height: 7px;
+	border-radius: 7px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 10px 0 20px;
+}
+.charts-name i.icon-charts-yellow{
+	background: #d5c089;
+}
+.charts-name i.icon-charts-blue{
+	background: #87bfd0;
+}
+.charts-name i.icon-charts-dark-blue{
+	background: #4d73c4;
+}
+.charts-name i.icon-charts-red{
+	background: #dc7d74;
+}
+.charts-name i.icon-charts-green{
+	background: #72c6af;
+}
+.charts-name i.icon-charts-tender-green{
+	background: #10c593;
+}
+.charts-name span{
+	font-size: 14px;
+	color: #9ba3b0;
+	margin-left: 10px;
+}
+.charts-name .change{
+	float: right;
+	margin-right: 30px;
+}
+.charts-name .change a{
+	font-size: 14px;
+	border: 1px solid #e9edf1;
+	padding: 2px 10px;
+}
+.charts-name .change a:first-child{
+	border-right: none;
+	border-radius: 2px 0 0 2px;
+}
+.charts-name .change a:last-child{
+	border-radius: 0 2px 2px 0;
+}
+.yellow .charts-name a.on{
+	color: #e2c066;
+}
+.green .charts-name a.on{
+	color: #23cdb7;
+}
+.red .charts-name a.on{
+	color: #dc7d74;
+}
+.dark-blue .charts-name a.on{
+	color: #4d73c4;
+}
+.tender-green .charts-name a.on{
+	color: #10c593;
+}
+.charts-box{
+	width: 100%;
+	height: 340px;
+	display: block;
+}
+.filter-data{
+	text-align: left;
+	font-size: 0;
+	line-height: 0;
+	width: 100%;
+	display: none;
+}
+.filter-data .rank{
+	width: 38.5%;
+	margin-left: 1.5%;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 20px;
+	vertical-align: top;
+}
+.filter-data .data-box{
+	width: 60%;
+	display: inline-block;
+}
+.filter-data .data-chart{
+	display: none;
+}
+.filter-data .charts{
+	width: 100%;
+	margin: 20px 0 0 0;
+}
+.ranking{
+	background: #fff;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+.order-rank{
+	text-align: left;
+	font-size: 0;
+	line-height: 0;
+}
+.order-rank .ranking{
+	width: 49.1%;
+	margin-left: 1.8%;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 20px;
+}
+.order-rank .ranking:first-child{
+	margin-left: 0;
+}
+.ranking .rank-name{
+	margin: 0 20px;
+	border-bottom: 1px solid #eaecf0;
+	height: 50px;
+	display: block;
+	color: #2d384a;
+	font-size: 18px;
+	line-height: 50px;
+}
+.ranking .rank-name span{
+	padding-left: 10px;
+	height: 18px;
+	line-height: 16px;
+	display: inline-block;
+}
+.yellow .rank-name span{
+	border-left: 4px solid #e2c066;
+}
+.green .rank-name span{
+	border-left: 4px solid #23cdb7;
+}
+.blue .rank-name span{
+	border-left: 4px solid #6bc0da;
+}
+.orange .rank-name span{
+	border-left: 4px solid #e67d72;
+}
+.dark-blue .rank-name span{
+	border-left: 4px solid #4d73c4;
+}
+.tender-green .rank-name span{
+	border-left: 4px solid #10c593;
+}
+.rank-list{
+	padding: 14px 20px 15px 65px;
+	line-height: 36px;
+	height: 180px;
+}
+.rank-list .num{
+	width: 45px;
+	height: auto;
+	float: left;
+	margin-left: -45px;
+	text-align: center;
+}
+.rank-list .num i{
+	text-align: left;
+	text-indent: -999px;
+	overflow: hidden;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: sub;
+}
+.yellow .num i.first{
+	background: url(../images/icon.png) no-repeat -1px -256px;
+}
+.green .num i.first{
+	background: url(../images/icon.png) no-repeat -27px -256px;
+}
+.blue .num i.first{
+	background: url(../images/icon.png) no-repeat -53px -256px;
+}
+.dark-blue .num i.first{
+	background: url(../images/icon.png) no-repeat -330px -300px;
+}
+.tender-green .num i.first{
+	background: url(../images/icon.png) no-repeat -304px -300px;
+}
+.orange .num i.first{
+	background: url(../images/icon.png) no-repeat -252px -300px;
+}
+.rank-list .num i.second{
+	background: url(../images/icon.png) no-repeat -79px -256px;
+}
+.rank-list .num i.third{
+	background: url(../images/icon.png) no-repeat -105px -256px;
+}
+.rank-list .num i.fourth{
+	background: url(../images/icon.png) no-repeat -131px -256px;
+}
+.rank-list .num i.fifth{
+	background: url(../images/icon.png) no-repeat -157px -256px;
+}
+.rank-list .name li{
+	padding-right: 135px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.rank-list .name li em{
+	width: 135px;
+	float: right;
+	margin-right: -135px;
+}
+.persons-rank .name li{
+	padding-right: 270px;
+	line-height: 34px;
+}
+.persons-rank .name li span{
+	width: 48%;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+	margin-right: 1%;
+}
+.persons-rank .name li span:first-child{
+}
+.persons-rank .name li em.quantity{
+	margin-right: -270px;
+}

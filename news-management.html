@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="style/global.css?v=1.0" />
 	<link rel="stylesheet" type="text/css" href="style/news-management.css?v=1.0" />
 	<script type="text/javascript" src="script/jquery.js"></script>
-	<!--<script type="text/javascript" src="script/global.js?v=1.0"></script>-->
+	<script type="text/javascript" src="script/global.js?v=1.0"></script>
 	<script type="text/javascript" src="script/news-management.js?v=1.0"></script>
 	<!--[if lte IE 9]>
 	<script type="text/javascript" src="script/html5.js"></script>
@@ -30,16 +30,21 @@
 				<div class="menu"><a href="user-management.html"><i class="icon-yh"></i>用户管理</a></div>
 			</div>
 			<div class="nav-box now">
-				<div class="menu"><a href="javascript:;" class="on"><i class="icon-xw"></i>新闻管理</a></div>
+				<div class="menu"><a href="javascript:;"><i class="icon-zj"></i>新闻管理</a></div>
+				<div class="subnav">
+					<a href="news-ordinary.html"class="on"><span><i></i></span>普通新闻</a>
+					<a href="news-management.html"><span><i></i></span>轮播新闻</a>
+					<a href="news-Carousel.html"><span><i></i></span>文字新闻</a>
+				</div>
 			</div>
 			<div class="nav-box">
 				<div class="menu"><a href="banner.html"><i class="icon-banner"></i>banner管理</a></div>
 			</div>
 			<div class="nav-box">
-				<div class="menu"><a href="javascript:;"><i class="icon-zj"></i>资金管理</a></div>
+				<div class="menu"><a href="funds.html"><i class="icon-zj"></i>资金管理</a></div>
 			</div>
 			<div class="nav-box">
-				<div class="menu"><a href="javascript:;"><i class="icon-dd"></i>订单管理</a></div>
+				<div class="menu"><a href="order-management.html"><i class="icon-dd"></i>订单管理</a></div>
 			</div>
 			<div class="nav-box">
 				<div class="menu"><a href="notice.html"><i class="icon-xt"></i>系统设置</a></div>
@@ -58,46 +63,43 @@
 			</div>
 			<div class="sys-name">芊浔体检管理后台</div>
 		</div>
-		<div class="find">
+		<!--<div class="find">
 			<div class="drop-down">
 				<div class="select-name">新闻版块：</div>
 				<div class="select">
 					<div class="selected">全部</div>
 					<div class="select-list">
-						<li>全部</li>
 						<li>四季养生</li>
 						<li>健康生活</li>
 					</div>
 					<div class="icon-dropdown"></div>
 				</div>
 			</div>
-			<div class="input-box">新闻标题：<input class="input" type="text" value="" placeholder="请输入" /></div>
-			<a href="javascript:;" class="find-btn"><i class="icon-search"></i>查找</a>
-		</div>
+			 <div class="input-box">新闻标题：<input class="input" type="text" value="" placeholder="请输入" /></div>
+			<a href="javascript:;" class="find-btn"><i class="icon-search"></i>查找</a> 
+		</div>-->
 		<div class="content">
 			<div class="shortcut-btns">
-				<a href="add-news.html" class="add"><i class="icon-add-news"></i>发布文章</a>
-				<a href="javascript:;" class="delete"><i class="icon-delete"></i>删除</a>
-				<a href="classify.html" class="classify"><i class="icon-classify"></i>版块管理</a>
+				<a href="add-news.html" class="add"><i class="icon-add-news"></i>发布</a>
+				<a href="classify.html" class="classify"><i class="icon-classify"></i>删除</a>
+				<a href="add-news.html" class="add"><i class="icon-add-news"></i>推送至轮播</a>
+				<a href="add-news.html" class="add"><i class="icon-add-news"></i>推送至文字</a>
+				<a href="add-news.html" class="add"><i class="icon-add-news"></i>版本管理</a>
 			</div>
 			<div class="table">
 				<div class="thead">
 					<div class="row">
 						<div class="check"><div class="check-box checkall"><i class="icon-check"></i>全选</div></div>
-						<div class="wzlx">文章类型</div>
-						<div class="ssbk">所属版块</div>
 						<div class="wzbt">文章标题</div>
 						<div class="fbsj">发布时间</div>
-						<div class="yd">阅读</div>
-						<div class="sc">收藏</div>
+						<div class="yd">阅读数</div>
+						<div class="sc">收藏数</div>
 						<div class="cz">操作</div>
 					</div>
 				</div>
 				<div class="tbody">
 					<div class="row">
 						<div class="check"><div class="check-box"><i class="icon-check"></i></div></div>
-						<div class="wzlx">普通</div>
-						<div class="ssbk">四季养生</div>
 						<div class="wzbt"><a href="javascript:;" title="秋天吃姜真的对身体有害吗？">秋天吃姜真的对身体有害吗？</a></div>
 						<div class="fbsj">2017-05-12    15:14:02</div>
 						<div class="yd">2451</div>
@@ -108,8 +110,6 @@
 					</div>
 					<div class="row">
 						<div class="check"><div class="check-box"><i class="icon-check"></i></div></div>
-						<div class="wzlx">置顶</div>
-						<div class="ssbk">日常生活</div>
 						<div class="wzbt"><a href="javascript:;" title="吃蜂蜜会发胖吗？">吃蜂蜜会发胖吗？</a></div>
 						<div class="fbsj">2017-05-12    15:14:02</div>
 						<div class="yd">2451</div>
@@ -120,8 +120,6 @@
 					</div>
 					<div class="row">
 						<div class="check"><div class="check-box"><i class="icon-check"></i></div></div>
-						<div class="wzlx">普通</div>
-						<div class="ssbk">四季养生</div>
 						<div class="wzbt"><a href="javascript:;" title="秋天吃姜真的对身体有害吗？">秋天吃姜真的对身体有害吗？</a></div>
 						<div class="fbsj">2017-05-12    15:14:02</div>
 						<div class="yd">2451</div>
@@ -132,8 +130,6 @@
 					</div>
 					<div class="row">
 						<div class="check"><div class="check-box"><i class="icon-check"></i></div></div>
-						<div class="wzlx">普通</div>
-						<div class="ssbk">四季养生</div>
 						<div class="wzbt"><a href="javascript:;" title="秋天吃姜真的对身体有害吗？">秋天吃姜真的对身体有害吗？</a></div>
 						<div class="fbsj">2017-05-12    15:14:02</div>
 						<div class="yd">2451</div>
@@ -144,8 +140,6 @@
 					</div>
 					<div class="row">
 						<div class="check"><div class="check-box"><i class="icon-check"></i></div></div>
-						<div class="wzlx">普通</div>
-						<div class="ssbk">四季养生</div>
 						<div class="wzbt"><a href="javascript:;" title="秋天吃姜真的对身体有害吗？">秋天吃姜真的对身体有害吗？</a></div>
 						<div class="fbsj">2017-05-12    15:14:02</div>
 						<div class="yd">2451</div>
@@ -156,8 +150,6 @@
 					</div>
 					<div class="row">
 						<div class="check"><div class="check-box"><i class="icon-check"></i></div></div>
-						<div class="wzlx">普通</div>
-						<div class="ssbk">四季养生</div>
 						<div class="wzbt"><a href="javascript:;" title="秋天吃姜真的对身体有害吗？">秋天吃姜真的对身体有害吗？</a></div>
 						<div class="fbsj">2017-05-12    15:14:02</div>
 						<div class="yd">2451</div>
@@ -168,8 +160,6 @@
 					</div>
 					<div class="row">
 						<div class="check"><div class="check-box"><i class="icon-check"></i></div></div>
-						<div class="wzlx">普通</div>
-						<div class="ssbk">四季养生</div>
 						<div class="wzbt"><a href="javascript:;" title="秋天吃姜真的对身体有害吗？">秋天吃姜真的对身体有害吗？</a></div>
 						<div class="fbsj">2017-05-12    15:14:02</div>
 						<div class="yd">2451</div>
@@ -180,8 +170,6 @@
 					</div>
 					<div class="row">
 						<div class="check"><div class="check-box"><i class="icon-check"></i></div></div>
-						<div class="wzlx">普通</div>
-						<div class="ssbk">四季养生</div>
 						<div class="wzbt"><a href="javascript:;" title="秋天吃姜真的对身体有害吗？">秋天吃姜真的对身体有害吗？</a></div>
 						<div class="fbsj">2017-05-12    15:14:02</div>
 						<div class="yd">2451</div>
@@ -192,8 +180,6 @@
 					</div>
 					<div class="row">
 						<div class="check"><div class="check-box"><i class="icon-check"></i></div></div>
-						<div class="wzlx">普通</div>
-						<div class="ssbk">四季养生</div>
 						<div class="wzbt"><a href="javascript:;" title="秋天吃姜真的对身体有害吗？">秋天吃姜真的对身体有害吗？</a></div>
 						<div class="fbsj">2017-05-12    15:14:02</div>
 						<div class="yd">2451</div>
@@ -204,8 +190,6 @@
 					</div>
 					<div class="row">
 						<div class="check"><div class="check-box"><i class="icon-check"></i></div></div>
-						<div class="wzlx">普通</div>
-						<div class="ssbk">四季养生</div>
 						<div class="wzbt"><a href="javascript:;" title="秋天吃姜真的对身体有害吗？">秋天吃姜真的对身体有害吗？</a></div>
 						<div class="fbsj">2017-05-12    15:14:02</div>
 						<div class="yd">2451</div>

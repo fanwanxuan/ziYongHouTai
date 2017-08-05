@@ -1,0 +1,76 @@
+.main{
+	min-width: 1680px;
+}
+.find .input-box,.find .drop-down{
+	margin-right: 35px;
+}
+.find .drop-down li{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.find .input-box .input{
+	width: 150px;
+}
+.statistics-result{
+	float: right;
+	background: #fff;
+	position: relative;
+	border-radius: 3px;
+	height: 40px;
+	line-height: 40px;
+	color: #646c7c;
+	padding: 0 10px;
+	display: none;
+}
+.statistics-result span{
+	padding: 0 5px;
+}
+.statistics-result em{
+	color: #f9844b;
+}
+.statistics-result i{
+	width: 15px;
+	height: 12px;
+	overflow: hidden;
+	background: url(../images/icon.png) no-repeat -217px -301px;
+	position: absolute;
+	right: 10px;
+	bottom: -12px;
+}
+.table .sysj{
+	width: 7%;
+}
+.table .yzm{
+	width: 11%;
+}
+.table .jgmc{
+	width: 12%;
+}
+.table .tjtc{
+	width: 12%;
+}
+.table .tjr{
+	width: 5%;
+}
+.table .xb{
+	width: 5%;
+}
+.table .dh{
+	width: 10%;
+}
+.table .tcje{
+	width: 8%;
+}
+.table .zzfs{
+	width: 5%;
+}
+.table .fcbl{
+	width: 5%;
+}
+.table .jgsd{
+	width: 10%;
+}
+.table .gssy{
+	width: 10%;
+}

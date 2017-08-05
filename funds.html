@@ -1,0 +1,260 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>资金管理 - 芊浔体检管理系统</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" sizes="16x16" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="style/global.css?v=1.0" />
+	<link rel="stylesheet" type="text/css" href="style/funds.css?v=1.0" />
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript" src="script/global.js?v=1.0"></script>
+	<script type="text/javascript" src="script/funds.js?v=1.0"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="script/html5.js"></script>
+	<! [endif]-->
+</head>
+<body>
+<section class="main">
+	<div class="main-left">
+		<div class="logo"><i></i></div>
+		<nav class="nav">
+			<div class="nav-box">
+				<div class="menu"><a href="institutional-management.html"><i class="icon-jg"></i>机构管理</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="user-management.html"><i class="icon-yh"></i>用户管理</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="news-management.html"><i class="icon-xw"></i>新闻管理</a></div>
+					<div class="subnav">
+					<a href="javascript:;" class="on"><span><i></i></span>资金统计</a>
+					<a href="persons.html"><span><i></i></span>人数统计</a>
+					<a href="order.html"><span><i></i></span>订单统计</a>
+				</div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="banner.html"><i class="icon-banner"></i>banner管理</a></div>
+			</div>
+			<div class="nav-box now">
+				<div class="menu"><a href="javascript:;"><i class="icon-zj"></i>资金管理</a></div>
+				<div class="subnav">
+					<a href="javascript:;" class="on"><span><i></i></span>资金统计</a>
+					<a href="persons.html"><span><i></i></span>人数统计</a>
+					<a href="order.html"><span><i></i></span>订单统计</a>
+				</div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="order-management.html"><i class="icon-dd"></i>订单管理</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="notice.html"><i class="icon-xt"></i>系统设置</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="authority.html"><i class="icon-qx"></i>权限管理</a></div>
+			</div>
+		</nav>
+	</div>
+	<div class="main-right">
+		<div class="main-top">
+			<div class="top-menu">
+				<a href="javascript:;" title="退出"><i class="icon-logout"></i></a>
+				<a href="javascript:;" title="修改密码"><i class="icon-changepassword"></i></a>
+				<span>Welcome，芊浔</span><span>2017年06月12日<em>14:28:00</em></span>
+			</div>
+			<div class="sys-name">芊浔体检管理后台</div>
+		</div>
+		<div class="content">
+			<div class="filter">
+				<div class="filter-btns">
+					<a href="javascript:;">本月</a>
+					<a href="javascript:;">本季</a>
+					<a href="javascript:;">本年</a>
+					<a href="javascript:;" class="on">总览</a>
+				</div>
+				<div class="details">
+					<a href="receipt.html"><i class="icon-receipt"></i>机构收款明细</a>
+					<a href="refunds.html"><i class="icon-refunds"></i>退款明细</a>
+				</div>
+				<div class="switch">
+					<a href="javascript:;" class="prev"></a>
+					<span class="now"></span>
+					<a href="javascript:;" class="next"></a>
+				</div>
+			</div>
+			<div class="overview">
+				<div class="overview-box">
+					<i class="icon-data-money"></i>
+					<h1>总交易金额</h1>
+					<li><em>￥</em>30,175</li>
+				</div>
+				<div class="overview-box">
+					<i class="icon-data-turnover"></i>
+					<h1>资金池流水</h1>
+					<li><em>￥</em>30,175</li>
+				</div>
+				<div class="overview-box">
+					<i class="icon-data-expenditure"></i>
+					<h1>已划入机构总金额</h1>
+					<li><em>￥</em>20,175</li>
+				</div>
+				<div class="overview-box">
+					<i class="icon-data-refunds"></i>
+					<h1>退款金额</h1>
+					<li><em>￥</em>7,175</li>
+				</div>
+				<div class="overview-box">
+					<i class="icon-data-income"></i>
+					<h1>平台收益</h1>
+					<li><em>￥</em>3,175</li>
+				</div>
+			</div>
+			<!--总览-->
+			<div class="data-charts allview">
+				<div class="charts">
+					<div class="charts-name"><i class="icon-charts-yellow"></i>机构交易量<span>(万元）/ 前五</span></div>
+					<div class="charts-box"></div>
+				</div>
+				<div class="charts">
+					<div class="charts-name"><i class="icon-charts-blue"></i>机构收益<span>(万元）/ 前五</span></div>
+					<div class="charts-box"></div>
+				</div>
+				<div class="charts">
+					<div class="charts-name"><i class="icon-charts-red"></i>城市交易量排名<span>前五</span></div>
+					<div class="charts-box"></div>
+				</div>
+				<div class="charts">
+					<div class="charts-name"><i class="icon-charts-green"></i>退款机构排名<span>(万元）/ 前五</span></div>
+					<div class="charts-box"></div>
+				</div>
+			</div>
+			<div class="filter-data">
+				<div class="data-box">
+					<!--按月-->
+					<div class="data-chart data-month">
+						<div class="charts yellow">
+							<div class="charts-name">
+								<div class="change"><a href="javascript:;" class="on">按周显示</a><a href="javascript:;">按日显示</a></div>
+								<i class="icon-charts-yellow"></i>交易金额<span>(千元）</span>
+							</div>
+							<div class="charts-box"></div>
+						</div>
+						<div class="charts green">
+							<div class="charts-name">
+								<div class="change"><a href="javascript:;" class="on">按周显示</a><a href="javascript:;">按日显示</a></div>
+								<i class="icon-charts-green"></i>体检人数<span>(位）</span>
+							</div>
+							<div class="charts-box"></div>
+						</div>
+					</div>
+					<!--按季-->
+					<div class="data-chart data-quarterly">
+						<div class="charts yellow">
+							<div class="charts-name">
+								<div class="change"><a href="javascript:;" class="on">按月显示</a><a href="javascript:;">按周显示</a></div>
+								<i class="icon-charts-yellow"></i>交易金额<span>(千元）</span>
+							</div>
+							<div class="charts-box"></div>
+						</div>
+						<div class="charts green">
+							<div class="charts-name">
+								<div class="change"><a href="javascript:;" class="on">按月显示</a><a href="javascript:;">按周显示</a></div>
+								<i class="icon-charts-green"></i>体检人数<span>(位）</span>
+							</div>
+							<div class="charts-box"></div>
+						</div>
+					</div>
+					<!--按年-->
+					<div class="data-chart data-year">
+						<div class="charts yellow">
+							<div class="charts-name">
+								<div class="change"><a href="javascript:;" class="on">按季显示</a><a href="javascript:;">按月显示</a></div>
+								<i class="icon-charts-yellow"></i>交易金额<span>(千元）</span>
+							</div>
+							<div class="charts-box"></div>
+						</div>
+						<div class="charts green">
+							<div class="charts-name">
+								<div class="change"><a href="javascript:;" class="on">按季显示</a><a href="javascript:;">按月显示</a></div>
+								<i class="icon-charts-green"></i>体检人数<span>(位）</span>
+							</div>
+							<div class="charts-box"></div>
+						</div>
+					</div>
+				</div>
+				<div class="rank">
+					<div class="ranking yellow">
+						<div class="rank-name">
+							<span>机构交易金额排名</span>
+						</div>
+						<div class="rank-list">
+							<div class="num">
+								<li><i class="first">1</i></li>
+								<li><i class="second">2</i></li>
+								<li><i class="third">3</i></li>
+								<li><i class="fourth">4</i></li>
+								<li><i class="fifth">5</i></li>
+							</div>
+							<div class="name">
+								<li><em class="amount">¥ 5800.00</em><span>成都八一军区骨科医院体检中心</span></li>
+								<li><em class="amount">¥ 5200.00</em><span>成都爱康国宾体检中心（城南分院）</span></li>
+								<li><em class="amount">¥ 5000.00</em><span>成都美年大健康体检中心（高新1分院）</span></li>
+								<li><em class="amount">¥ 4800.00</em><span>成都市臻熙健康体检中心</span></li>
+								<li><em class="amount">¥ 4000.00</em><span>武警四川消防总队医院体检中心</span></li>
+							</div>
+						</div>
+					</div>
+					<div class="ranking green">
+						<div class="rank-name">
+							<span>体检机构人数排名</span>
+						</div>
+						<div class="rank-list">
+							<div class="num">
+								<li><i class="first">1</i></li>
+								<li><i class="second">2</i></li>
+								<li><i class="third">3</i></li>
+								<li><i class="fourth">4</i></li>
+								<li><i class="fifth">5</i></li>
+							</div>
+							<div class="name">
+								<li><em class="amount">14874</em><span>成都八一军区骨科医院体检中心</span></li>
+								<li><em class="amount">10520</em><span>成都爱康国宾体检中心（城南分院）</span></li>
+								<li><em class="amount">8921</em><span>成都美年大健康体检中心（高新1分院）</span></li>
+								<li><em class="amount">8556</em><span>成都市臻熙健康体检中心</span></li>
+								<li><em class="amount">5252</em><span>武警四川消防总队医院体检中心</span></li>
+							</div>
+						</div>
+					</div>
+					<div class="ranking blue">
+						<div class="rank-name">
+							<span>机构收益排名</span>
+						</div>
+						<div class="rank-list">
+							<div class="num">
+								<li><i class="first">1</i></li>
+								<li><i class="second">2</i></li>
+								<li><i class="third">3</i></li>
+								<li><i class="fourth">4</i></li>
+								<li><i class="fifth">5</i></li>
+							</div>
+							<div class="name">
+								<li><em class="amount">¥ 5800.00</em><span>成都八一军区骨科医院体检中心</span></li>
+								<li><em class="amount">¥ 5200.00</em><span>成都爱康国宾体检中心（城南分院）</span></li>
+								<li><em class="amount">¥ 5000.00</em><span>成都美年大健康体检中心（高新1分院）</span></li>
+								<li><em class="amount">¥ 4800.00</em><span>成都市臻熙健康体检中心</span></li>
+								<li><em class="amount">¥ 4000.00</em><span>武警四川消防总队医院体检中心</span></li>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</section>
+</body>
+</html>

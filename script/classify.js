@@ -1,7 +1,7 @@
 //time:217-06-27
 //made by: kami
 jQuery(document).ready(function(){
-	jQuery(".shortcut-btns .delete").live("click",function(){//批量删除人员
+	/*jQuery(".shortcut-btns .delete").live("click",function(){//批量删除人员
 		if(jQuery(".tbody .check-box .on").length>0){
 			var name = "";
 			for(var i = 0;i < jQuery(".tbody .check-box").length;i++){
@@ -15,9 +15,10 @@ jQuery(document).ready(function(){
 			var fuvalue="";
 			sysmessage(title,content,callback,fuvalue);
 		}
-	});
+	});*/
+
 	//添加版块
-	jQuery(".shortcut-btns .add").on("click",function(){
+	jQuery(".shortcut-btns .add").live("click",function(){
 		editcontent("添加版块","","","addclassify","添  加");
 	});
 	//编辑版块
@@ -38,6 +39,23 @@ jQuery(document).ready(function(){
 		}
 	});
 });
+	/*function operationD (name){
+		 jQuery(".shortcut-btns " +name).live("click",function(){//批量删除人员
+			if(jQuery(".tbody .check-box .on").length>0){
+				var name = "";
+				for(var i = 0;i < jQuery(".tbody .check-box").length;i++){
+					if(jQuery(".tbody .check-box").eq(i).find("i").hasClass("on")){
+						name += "“<em>"+jQuery(".tbody .row").eq(i).find(".bkmc").text()+"</em>”";
+					};
+				}
+				var title="系统提示";
+				var content="<li>你确定要删除"+name+"吗？</li>";
+				var callback="deleteclassify";
+				var fuvalue="";
+				sysmessage(title,content,callback,fuvalue);
+			}
+		}); 
+	}*/
 function deleteclassify(){//删除版块
 	if(!jQuery(".system-message").is(":animated")){//没有执行动画的情况下
 		messageclose();

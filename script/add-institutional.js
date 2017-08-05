@@ -9,4 +9,14 @@ jQuery(document).ready(function(){
 			jQuery(".bank").hide();
 		}
 	});
+	$(".province").click(function(){
+	  $(".province-list").css("display",'block');
+});
+	$(".city").click(function(){
+		  $(".province-list").css("display",'block');
+	});
+			$(".county").click(function(){
+			  $(".province-list").css("display",'block');
+		});
+
 });

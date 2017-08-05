@@ -1,0 +1,261 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>订单管理 - 芊浔体检管理系统</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" sizes="16x16" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="style/global.css?v=1.0" />
+	<link rel="stylesheet" type="text/css" href="style/order-management.css?v=1.0" />
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript" src="script/global.js?v=1.0"></script>
+	<script type="text/javascript" src="script/order-management.js?v=1.0"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="script/html5.js"></script>
+	<! [endif]-->
+</head>
+<body>
+<section class="main">
+	<div class="main-left">
+		<div class="logo"><i></i></div>
+		<nav class="nav">
+			<div class="nav-box">
+				<div class="menu"><a href="institutional-management.html"><i class="icon-jg"></i>机构管理</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="javascript:;"><i class="icon-yh"></i>用户管理</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="news-management.html"><i class="icon-xw"></i>新闻管理</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="banner.html"><i class="icon-banner"></i>banner管理</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="funds.html"><i class="icon-zj"></i>资金管理</a></div>
+			</div>
+			<div class="nav-box now">
+				<div class="menu"><a href="javascript:;" class="on"><i class="icon-dd"></i>订单管理</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="notice.html"><i class="icon-xt"></i>系统设置</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="authority.html"><i class="icon-qx"></i>权限管理</a></div>
+			</div>
+		</nav>
+	</div>
+	<div class="main-right">
+		<div class="main-top">
+			<div class="top-menu">
+				<a href="javascript:;" title="退出"><i class="icon-logout"></i></a>
+				<a href="javascript:;" title="修改密码"><i class="icon-changepassword"></i></a>
+				<span>Welcome，芊浔</span><span>2017年06月12日<em>14:28:00</em></span>
+			</div>
+			<div class="sys-name">芊浔体检管理后台</div>
+		</div>
+		<div class="find">
+			<div class="input-box">订单号：<input class="input" type="text" value="" placeholder="请输入" /></div>
+			<div class="input-box">手机号：<input class="input" type="tel" value="" placeholder="请输入" /></div>
+			<div class="drop-down">
+				<div class="select-name">状态：</div>
+				<div class="select">
+					<div class="selected">全部</div>
+					<div class="select-list">
+						<li>全部</li>
+						<li class="waiting">待付款</li>
+						<li class="waiting">待体检</li>
+						<li>已完成</li>
+						<li class="canceled">已关闭</li>
+						<li class="canceled">退款</li>
+					</div>
+					<div class="icon-dropdown"></div>
+				</div>
+			</div>
+			<a href="javascript:;" class="find-btn"><i class="icon-search"></i>查找</a>
+		</div>
+		<div class="content">
+			<div class="table">
+				<div class="thead">
+					<div class="row">
+						<div class="ddh">订单号</div>
+						<div class="xdsj">下单时间</div>
+						<div class="lxr">联系人</div>
+						<div class="sjh">手机号</div>
+						<div class="ddze">订单总额</div>
+						<div class="tjrs">体检人数</div>
+						<div class="fkfs">付款方式</div>
+						<div class="zt">状态</div>
+					</div>
+				</div>
+				<div class="tbody">
+					<div class="row">
+						<div class="ddh">CD1654654654</div>
+						<div class="xdsj">2017.05.05 12:45</div>
+						<div class="lxr">王大锤</div>
+						<div class="sjh">13888888888</div>
+						<div class="ddze">1000</div>
+						<div class="tjrs"><a href="javascript:;">2位</a></div>
+						<div class="fkfs">支付宝</div>
+						<div class="zt"><span>已完成</span></div>
+					</div>
+					<div class="row">
+						<div class="ddh">CD1654654654</div>
+						<div class="xdsj">2017.05.05 12:45</div>
+						<div class="lxr">王大锤</div>
+						<div class="sjh">13888888888</div>
+						<div class="ddze">1000</div>
+						<div class="tjrs"><a href="javascript:;">2位</a></div>
+						<div class="fkfs">支付宝</div>
+						<div class="zt"><span class="canceled">已关闭</span></div>
+					</div>
+					<div class="row">
+						<div class="ddh">CD1654654654</div>
+						<div class="xdsj">2017.05.05 12:45</div>
+						<div class="lxr">王大锤</div>
+						<div class="sjh">13888888888</div>
+						<div class="ddze">1000</div>
+						<div class="tjrs"><a href="javascript:;">2位</a></div>
+						<div class="fkfs">支付宝</div>
+						<div class="zt"><span class="canceled">退款</span></div>
+					</div>
+					<div class="row">
+						<div class="ddh">CD1654654654</div>
+						<div class="xdsj">2017.05.05 12:45</div>
+						<div class="lxr">王大锤</div>
+						<div class="sjh">13888888888</div>
+						<div class="ddze">1000</div>
+						<div class="tjrs"><a href="javascript:;">2位</a></div>
+						<div class="fkfs">支付宝</div>
+						<div class="zt"><span class="waiting">待支付</span></div>
+					</div>
+					<div class="row">
+						<div class="ddh">CD1654654654</div>
+						<div class="xdsj">2017.05.05 12:45</div>
+						<div class="lxr">王大锤</div>
+						<div class="sjh">13888888888</div>
+						<div class="ddze">1000</div>
+						<div class="tjrs"><a href="javascript:;">2位</a></div>
+						<div class="fkfs">支付宝</div>
+						<div class="zt"><span class="waiting">待体检</span></div>
+					</div>
+					<div class="row">
+						<div class="ddh">CD1654654654</div>
+						<div class="xdsj">2017.05.05 12:45</div>
+						<div class="lxr">王大锤</div>
+						<div class="sjh">13888888888</div>
+						<div class="ddze">1000</div>
+						<div class="tjrs"><a href="javascript:;">2位</a></div>
+						<div class="fkfs">支付宝</div>
+						<div class="zt"><span>已完成</span></div>
+					</div>
+					<div class="row">
+						<div class="ddh">CD1654654654</div>
+						<div class="xdsj">2017.05.05 12:45</div>
+						<div class="lxr">王大锤</div>
+						<div class="sjh">13888888888</div>
+						<div class="ddze">1000</div>
+						<div class="tjrs"><a href="javascript:;">2位</a></div>
+						<div class="fkfs">支付宝</div>
+						<div class="zt"><span>已完成</span></div>
+					</div>
+					<div class="row">
+						<div class="ddh">CD1654654654</div>
+						<div class="xdsj">2017.05.05 12:45</div>
+						<div class="lxr">王大锤</div>
+						<div class="sjh">13888888888</div>
+						<div class="ddze">1000</div>
+						<div class="tjrs"><a href="javascript:;">2位</a></div>
+						<div class="fkfs">支付宝</div>
+						<div class="zt"><span>已完成</span></div>
+					</div>
+					<div class="row">
+						<div class="ddh">CD1654654654</div>
+						<div class="xdsj">2017.05.05 12:45</div>
+						<div class="lxr">王大锤</div>
+						<div class="sjh">13888888888</div>
+						<div class="ddze">1000</div>
+						<div class="tjrs"><a href="javascript:;">2位</a></div>
+						<div class="fkfs">支付宝</div>
+						<div class="zt"><span>已完成</span></div>
+					</div>
+					<div class="row">
+						<div class="ddh">CD1654654654</div>
+						<div class="xdsj">2017.05.05 12:45</div>
+						<div class="lxr">王大锤</div>
+						<div class="sjh">13888888888</div>
+						<div class="ddze">1000</div>
+						<div class="tjrs"><a href="javascript:;">2位</a></div>
+						<div class="fkfs">支付宝</div>
+						<div class="zt"><span>已完成</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="page">
+				共128条记录
+				<a href="javascript:;" title="上一页" class="prev">上一页</a>
+				<span class="on">1</span>
+				<a href="javascript:;">2</a>
+				<a href="javascript:;">3</a>
+				<a href="javascript:;">4</a>
+				<a href="javascript:;">5</a>
+				<span>...</span>
+				<a href="javascript:;">12</a>
+				<a href="javascript:;">13</a>
+				<a href="javascript:;" title="下一页" class="next">下一页</a>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</section>
+<section class="accountbox">
+	<div class="account-title"><i class="close" onclick="javascript:accountboxclose();">关闭</i><span>体检人信息</span></div>
+	<div class="account-content">
+		<div class="line">
+			<div class="item-code">验证码</div>
+			<div class="item-name">姓名</div>
+			<div class="item-gender">性别</div>
+			<div class="item-marital">婚姻状态</div>
+			<div class="item-phone">手机号码</div>
+			<div class="item-idcard">身份证</div>
+			<div class="item-jg">体检机构</div>
+			<div class="item-tc">预约套餐</div>
+			<div class="item-money">金额</div>
+			<div class="item-day">预约时间</div>
+			<div class="item-status">状态</div>
+		</div>
+		<div class="line">
+			<div class="item-code">CD544845545</div>
+			<div class="item-name">上条当麻</div>
+			<div class="item-gender">男</div>
+			<div class="item-marital">未婚</div>
+			<div class="item-phone">13888888888</div>
+			<div class="item-idcard">512501197203035172</div>
+			<div class="item-jg">成都第三人民医院</div>
+			<div class="item-tc">入职体检</div>
+			<div class="item-money">110</div>
+			<div class="item-day">2017.05.27</div>
+			<div class="item-status"><span>已完成</span></div>
+		</div>
+		<div class="line">
+			<div class="item-code">CD544845545</div>
+			<div class="item-name">茵蒂克丝</div>
+			<div class="item-gender">女</div>
+			<div class="item-marital">未婚</div>
+			<div class="item-phone">15888888888</div>
+			<div class="item-idcard">51052119850508797x</div>
+			<div class="item-jg">成都第三人民医院</div>
+			<div class="item-tc">入职体检</div>
+			<div class="item-money">110</div>
+			<div class="item-day">2017.06.02</div>
+			<div class="item-status"><span class="waiting">待体检</span></div>
+		</div>
+	</div>
+	<div class="account-btns"><a href="javascript:;" class="yes" onclick="accountboxclose()">关&nbsp;&nbsp;闭</a></div>
+</section>
+</body>
+</html>

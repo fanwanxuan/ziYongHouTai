@@ -1,15 +1,18 @@
-.thead{
+.thead {
 	font-size: 18px;
 	text-indent: 30px;
 }
-.table .tbody{
+
+.table .tbody {
 	padding: 30px 0 50px 0;
 }
-.line{
+
+.line {
 	line-height: 40px;
 	padding: 10px 0;
 }
-.line-left{
+
+.line-left {
 	float: left;
 	width: 30%;
 	height: 40px;
@@ -18,53 +21,67 @@
 	padding-right: 20px;
 	color: #2d384a;
 }
-.line-left em{
+
+.line-left em {
 	color: #f9844b;
 	margin-right: 5px;
 }
-.line-right{
+
+.line-right {
 	padding-left: 30%;
 }
-.line-right .number{
+
+.line-right .number {
 	color: #9ba3b0;
 }
-.line-right .input-box{
-	display: inline;
+
+.line-right .input-box {
+	display: inline-block;
 }
-.line-right .input-box .input{
+
+.line-right .input-box .input {
 	width: 380px;
 }
-.line-right .bili .input{
+
+.line-right .bili .input {
 	width: 100px;
 }
-.line-right .bili em{
+
+.line-right .bili em {
 	margin-left: 5px;
 }
-.line-right .error-tips{
+
+.line-right .error-tips {
 	display: inline;
 	color: #f9844b;
 	margin-left: 10px;
 }
-.radios{
+
+.radios {
 	display: inline;
 }
-.radio{
+
+.radio {
 	margin-right: 20px;
 }
-.radios span{
+
+.radios span {
 	margin-left: -20px;
 	font-size: 12px;
 	color: #9ba3b0;
 }
-.bank{
+
+.bank {
 	display: none;
 }
-.last-tips{
+
+.last-tips {
 	color: #f9844b;
 	line-height: 30px;
 	margin-top: -10px;
 }
-.submit a{
+
+.submit a {
 	width: 160px;
 	height: 40px;
 	display: inline-block;
@@ -75,6 +92,20 @@
 	text-align: center;
 	font-weight: bold;
 }
-.submit a:hover{
+
+.submit a:hover {
 	background: #1bbba6;
+}
+
+
+/*新加省市县*/
+
+#s_province,
+#s_city,
+#s_county {
+	padding: 10px 0;
+	border: 1px #d8dee3 solid;
+	width: 10%;
+	position: relative;
+	text-align: center;
 }

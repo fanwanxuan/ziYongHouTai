@@ -1,0 +1,170 @@
+.find .input-box{
+	margin-right: 20px;
+}
+.find .input-box .input{
+	width: 150px;
+}
+.find .drop-down{
+	margin-right: 20px;
+}
+.drop-down .waiting{
+	color: #06be94;
+}
+.drop-down .canceled{
+	color: #e61616;
+}
+.table{
+	margin-top: 40px;
+}
+.table .ddh{
+	width: 20%;
+}
+.table .xdsj{
+	width: 15%;
+}
+.table .lxr{
+	width: 10%;
+}
+.table .sjh{
+	width: 15%;
+}
+.table .ddze{
+	width: 10%;
+}
+.table .tjrs{
+	width: 10%;
+}
+.table .fkfs{
+	width: 10%;
+}
+.table .zt{
+	width: 10%;
+}
+.tbody a{
+	color: #4b6cb9;
+}
+.tbody a:hover{
+	text-decoration: underline;
+}
+.tbody .waiting{
+	color: #06be94;
+}
+.tbody .canceled{
+	color: #e61616;
+}
+.accountbox{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	width: 1100px;
+	height: auto;
+	z-index: 999;
+	display: none;
+	margin-left: -550px;
+}
+.accountbox .account-title{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	background: #7b8ba5;
+	color: #ffffff;
+	border-radius: 5px 5px 0 0;
+	text-indent: 20px;
+}
+.accountbox .account-title .close{
+	float: right;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	background: url(../images/icon.png) no-repeat -478px -256px;
+	cursor: pointer;
+	margin: 17px 20px 0 0;
+}
+.accountbox .account-content{
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	background: #fff;
+	padding-bottom: 30px;
+}
+.accountbox .account-content .line{
+	display: block;
+	margin: 0 20px;
+	border-bottom: 1px solid #e2e5ea;
+	color: #2d384a;
+	font-size: 0;
+	line-height: 0;
+}
+.accountbox .account-content .line:first-child{
+	color:#9ba3b0;
+}
+.accountbox .account-content .line div{
+	display: inline-block;
+	font-size: 14px;
+	line-height: 50px;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+}
+.accountbox .account-content .item-code{
+	width: 10%;
+}
+.accountbox .account-content .item-name{
+	width: 6%;
+}
+.accountbox .account-content .item-gender{
+	width: 5%;
+}
+.accountbox .account-content .item-marital{
+	width: 6%;
+}
+.accountbox .account-content .item-phone{
+	width: 10%;
+}
+.accountbox .account-content .item-idcard{
+	width: 15%;
+}
+.accountbox .account-content .item-jg{
+	width: 13%;
+}
+.accountbox .account-content .item-tc{
+	width: 13%;
+}
+.accountbox .account-content .item-money{
+	width: 8%;
+}
+.accountbox .account-content .item-day{
+	width: 8%;
+}
+.accountbox .account-content .item-status{
+	width: 6%;
+}
+.accountbox .item-status .waiting{
+	color: #06be94;
+}
+.accountbox .account-btns{
+	width: 100%;
+	height: auto;
+	padding-bottom: 30px;
+	border-radius: 0 0 5px 5px;
+	background: #fff;
+	text-align: center;
+}
+.accountbox .account-btns a{
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	background: #23cdb7;
+	color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 0 #dedede;
+	margin: 0 50px;
+	font-size: 16px;
+}
+.accountbox .account-btns a:hover{
+	background: #1bbba6;
+}

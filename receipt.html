@@ -1,0 +1,286 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>收款明细 - 芊浔体检管理系统</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" sizes="16x16" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="style/global.css?v=1.0" />
+	<link rel="stylesheet" type="text/css" href="style/receipt.css?v=1.0" />
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript" src="script/global.js?v=1.0"></script>
+	<script type="text/javascript" src="script/receipt.js?v=1.0"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="script/html5.js"></script>
+	<! [endif]-->
+</head>
+<body>
+<section class="main">
+	<div class="main-left">
+		<div class="logo"><i></i></div>
+		<nav class="nav">
+			<div class="nav-box">
+				<div class="menu"><a href="institutional-management.html"><i class="icon-jg"></i>机构管理</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="user-management.html"><i class="icon-yh"></i>用户管理</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="news-management.html"><i class="icon-xw"></i>新闻管理</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="banner.html"><i class="icon-banner"></i>banner管理</a></div>
+			</div>
+			<div class="nav-box now">
+				<div class="menu"><a href="javascript:;"><i class="icon-zj"></i>资金管理</a></div>
+				<div class="subnav">
+					<a href="funds.html" class="on"><span><i></i></span>资金统计</a>
+					<a href="persons.html"><span><i></i></span>人数统计</a>
+					<a href="order.html"><span><i></i></span>订单统计</a>
+				</div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="order-management.html"><i class="icon-dd"></i>订单管理</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="notice.html"><i class="icon-xt"></i>系统设置</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="authority.html"><i class="icon-qx"></i>权限管理</a></div>
+			</div>
+		</nav>
+	</div>
+	<div class="main-right">
+		<div class="main-top">
+			<div class="top-menu">
+				<a href="javascript:;" title="退出"><i class="icon-logout"></i></a>
+				<a href="javascript:;" title="修改密码"><i class="icon-changepassword"></i></a>
+				<span>Welcome，芊浔</span><span>2017年06月12日<em>14:28:00</em></span>
+			</div>
+			<div class="sys-name">芊浔体检管理后台</div>
+		</div>
+		<div class="find">
+			<div class="input-box">使用时间：
+				<div class="calendar">
+					<div class="icon-calendar"></div>
+					<div class="date"></div>
+				</div>
+				<span>-</span>
+				<div class="calendar">
+					<div class="icon-calendar"></div>
+					<div class="date"></div>
+				</div>
+			</div>
+			<div class="drop-down">
+				<div class="select-name">体检机构：</div>
+				<div class="select">
+					<div class="selected">全部</div>
+					<div class="select-list">
+						<li>全部</li>
+						<li>成都第三人民医院</li>
+						<li>爱康体检</li>
+						<li>美年体检</li>
+					</div>
+					<div class="icon-dropdown"></div>
+				</div>
+			</div>
+			<div class="input-box">验证码：
+				<input class="input" type="text" value="" placeholder="请输入" />
+			</div>
+			<div class="input-box">手机号：
+				<input class="input" type="tel" value="" placeholder="请输入" />
+			</div>
+			<a href="javascript:;" class="find-btn"><i class="icon-search"></i>查找</a>
+		</div>
+		<div class="content">
+			<div class="shortcut-btns">
+				<div class="statistics-result">
+					<span>机构所得：<em>224590.00</em></span><span>|</span><span>公司收益：<em>24590.00</em></span><i class="indicator"></i>
+				</div>
+				<a href="javascript:history.go(-1);"><i class="icon-back"></i>返回</a>
+				<a href="javascript:statistical_amount();"><i class="icon-statistics"></i>统计金额</a>
+				<a href="javascript:;"><i class="icon-export"></i>导出</a>
+			</div>
+			<div class="table">
+				<div class="thead">
+					<div class="row">
+						<div class="sysj">使用时间</div>
+						<div class="yzm">验证码</div>
+						<div class="jgmc">机构名称</div>
+						<div class="tjtc">体检套餐</div>
+						<div class="tjr">体检人</div>
+						<div class="xb">性别</div>
+						<div class="dh">电话</div>
+						<div class="tcje">套餐金额</div>
+						<div class="zzfs">转账方式</div>
+						<div class="fcbl">分成比例</div>
+						<div class="jgsd">机构所得</div>
+						<div class="gssy">公司收益</div>
+					</div>
+				</div>
+				<div class="tbody">
+					<div class="row">
+						<div class="sysj">2017.06.05</div>
+						<div class="yzm">CD20170310001</div>
+						<div class="jgmc">成都军区八一骨科医院体检中心</div>
+						<div class="tjtc">入职体检套餐（男女）</div>
+						<div class="tjr">王大锤</div>
+						<div class="xb">男</div>
+						<div class="dh">13888888888</div>
+						<div class="tcje">120</div>
+						<div class="zzfs">微信</div>
+						<div class="fcbl">10%</div>
+						<div class="jgsd">108</div>
+						<div class="gssy">12</div>
+					</div>
+					<div class="row">
+						<div class="sysj">2017.06.05</div>
+						<div class="yzm">CD20170310001</div>
+						<div class="jgmc">成都军区八一骨科医院体检中心</div>
+						<div class="tjtc">入职体检套餐（男女）</div>
+						<div class="tjr">王大锤</div>
+						<div class="xb">男</div>
+						<div class="dh">13888888888</div>
+						<div class="tcje">120</div>
+						<div class="zzfs">微信</div>
+						<div class="fcbl">10%</div>
+						<div class="jgsd">108</div>
+						<div class="gssy">12</div>
+					</div>
+					<div class="row">
+						<div class="sysj">2017.06.05</div>
+						<div class="yzm">CD20170310001</div>
+						<div class="jgmc">成都军区八一骨科医院体检中心</div>
+						<div class="tjtc">入职体检套餐（男女）</div>
+						<div class="tjr">王大锤</div>
+						<div class="xb">男</div>
+						<div class="dh">13888888888</div>
+						<div class="tcje">120</div>
+						<div class="zzfs">微信</div>
+						<div class="fcbl">10%</div>
+						<div class="jgsd">108</div>
+						<div class="gssy">12</div>
+					</div>
+					<div class="row">
+						<div class="sysj">2017.06.05</div>
+						<div class="yzm">CD20170310001</div>
+						<div class="jgmc">成都军区八一骨科医院体检中心</div>
+						<div class="tjtc">入职体检套餐（男女）</div>
+						<div class="tjr">王大锤</div>
+						<div class="xb">男</div>
+						<div class="dh">13888888888</div>
+						<div class="tcje">120</div>
+						<div class="zzfs">微信</div>
+						<div class="fcbl">10%</div>
+						<div class="jgsd">108</div>
+						<div class="gssy">12</div>
+					</div>
+					<div class="row">
+						<div class="sysj">2017.06.05</div>
+						<div class="yzm">CD20170310001</div>
+						<div class="jgmc">成都军区八一骨科医院体检中心</div>
+						<div class="tjtc">入职体检套餐（男女）</div>
+						<div class="tjr">王大锤</div>
+						<div class="xb">男</div>
+						<div class="dh">13888888888</div>
+						<div class="tcje">120</div>
+						<div class="zzfs">微信</div>
+						<div class="fcbl">10%</div>
+						<div class="jgsd">108</div>
+						<div class="gssy">12</div>
+					</div>
+					<div class="row">
+						<div class="sysj">2017.06.05</div>
+						<div class="yzm">CD20170310001</div>
+						<div class="jgmc">成都军区八一骨科医院体检中心</div>
+						<div class="tjtc">入职体检套餐（男女）</div>
+						<div class="tjr">王大锤</div>
+						<div class="xb">男</div>
+						<div class="dh">13888888888</div>
+						<div class="tcje">120</div>
+						<div class="zzfs">微信</div>
+						<div class="fcbl">10%</div>
+						<div class="jgsd">108</div>
+						<div class="gssy">12</div>
+					</div>
+					<div class="row">
+						<div class="sysj">2017.06.05</div>
+						<div class="yzm">CD20170310001</div>
+						<div class="jgmc">成都军区八一骨科医院体检中心</div>
+						<div class="tjtc">入职体检套餐（男女）</div>
+						<div class="tjr">王大锤</div>
+						<div class="xb">男</div>
+						<div class="dh">13888888888</div>
+						<div class="tcje">120</div>
+						<div class="zzfs">微信</div>
+						<div class="fcbl">10%</div>
+						<div class="jgsd">108</div>
+						<div class="gssy">12</div>
+					</div>
+					<div class="row">
+						<div class="sysj">2017.06.05</div>
+						<div class="yzm">CD20170310001</div>
+						<div class="jgmc">成都军区八一骨科医院体检中心</div>
+						<div class="tjtc">入职体检套餐（男女）</div>
+						<div class="tjr">王大锤</div>
+						<div class="xb">男</div>
+						<div class="dh">13888888888</div>
+						<div class="tcje">120</div>
+						<div class="zzfs">微信</div>
+						<div class="fcbl">10%</div>
+						<div class="jgsd">108</div>
+						<div class="gssy">12</div>
+					</div>
+					<div class="row">
+						<div class="sysj">2017.06.05</div>
+						<div class="yzm">CD20170310001</div>
+						<div class="jgmc">成都军区八一骨科医院体检中心</div>
+						<div class="tjtc">入职体检套餐（男女）</div>
+						<div class="tjr">王大锤</div>
+						<div class="xb">男</div>
+						<div class="dh">13888888888</div>
+						<div class="tcje">120</div>
+						<div class="zzfs">微信</div>
+						<div class="fcbl">10%</div>
+						<div class="jgsd">108</div>
+						<div class="gssy">12</div>
+					</div>
+					<div class="row">
+						<div class="sysj">2017.06.05</div>
+						<div class="yzm">CD20170310001</div>
+						<div class="jgmc">成都军区八一骨科医院体检中心</div>
+						<div class="tjtc">入职体检套餐（男女）</div>
+						<div class="tjr">王大锤</div>
+						<div class="xb">男</div>
+						<div class="dh">13888888888</div>
+						<div class="tcje">120</div>
+						<div class="zzfs">微信</div>
+						<div class="fcbl">10%</div>
+						<div class="jgsd">108</div>
+						<div class="gssy">12</div>
+					</div>
+				</div>
+			</div>
+			<div class="page">
+				共128条记录
+				<a href="javascript:;" title="上一页" class="prev">上一页</a>
+				<span class="on">1</span>
+				<a href="javascript:;">2</a>
+				<a href="javascript:;">3</a>
+				<a href="javascript:;">4</a>
+				<a href="javascript:;">5</a>
+				<span>...</span>
+				<a href="javascript:;">12</a>
+				<a href="javascript:;">13</a>
+				<a href="javascript:;" title="下一页" class="next">下一页</a>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</section>
+</body>
+</html>
