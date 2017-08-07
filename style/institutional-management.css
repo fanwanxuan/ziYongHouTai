@@ -1,196 +1,196 @@
 .table .jgh {
-	width: 20%;
+    width: 20%;
 }
 
 .table .jgmc {
-	width: 34%;
+    width: 34%;
 }
 
 .table .lxdh {
-	width: 13%;
+    width: 13%;
 }
 
 .table .skfs {
-	width: 13%;
+    width: 13%;
 }
 
 .table .cz {
-	width: 20%;
+    width: 20%;
 }
 
 .table .check {
-	width: 10%
+    width: 10%
 }
 
 .table .name {
-	width: 25%
+    width: 25%
 }
 
 .table .gender {
-	width: 15%
+    width: 15%
 }
 
 .table .tel {
-	width: 30%
+    width: 30%
 }
 
 .editbox {
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	width: 560px;
-	height: auto;
-	z-index: 999;
-	display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 560px;
+    height: auto;
+    z-index: 999;
+    display: none;
 }
 
 .editbox .edit-title {
-	width: 100%;
-	height: 50px;
-	line-height: 50px;
-	font-size: 18px;
-	background: #7b8ba5;
-	color: #ffffff;
-	border-radius: 5px 5px 0 0;
-	text-indent: 20px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    background: #7b8ba5;
+    color: #ffffff;
+    border-radius: 5px 5px 0 0;
+    text-indent: 20px;
 }
 
 .editbox .edit-title .close {
-	float: right;
-	width: 16px;
-	height: 16px;
-	overflow: hidden;
-	background: url(../images/icon.png) no-repeat -478px -256px;
-	cursor: pointer;
-	margin: 17px 20px 0 0;
+    float: right;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    background: url(../images/icon.png) no-repeat -478px -256px;
+    cursor: pointer;
+    margin: 17px 20px 0 0;
 }
 
 .editbox .edit-content {
-	width: 100%;
-	height: auto;
-	font-size: 16px;
-	background: #fff;
-	padding-top: 30px;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    background: #fff;
+    padding-top: 30px;
 }
 
 .editbox .edit-content .line {
-	padding: 10px 0;
+    padding: 10px 0;
 }
 
 .editbox .edit-content .line-left {
-	line-height: 40px;
-	display: inline-block;
-	width: 130px;
-	height: 40px;
-	text-align: right;
+    line-height: 40px;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    text-align: right;
 }
 
 .editbox .edit-content .line-right {
-	line-height: 40px;
-	display: inline-block;
-	width: 380px;
-	height: 40px;
-	margin-left: 10px;
+    line-height: 40px;
+    display: inline-block;
+    width: 380px;
+    height: 40px;
+    margin-left: 10px;
 }
 
 .editbox .edit-content .input {
-	width: 302px;
+    width: 302px;
 }
 
 .editbox .edit-content .gender {
-	width: 148px;
-	height: 38px;
-	line-height: 38px;
-	border: 1px solid #d2d9df;
-	position: relative;
-	color: #9ba3b0;
-	text-align: center;
-	cursor: pointer;
-	display: inline-block;
-	margin-right: 20px;
-	border-radius: 3px;
+    width: 148px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #d2d9df;
+    position: relative;
+    color: #9ba3b0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 3px;
 }
 
 .editbox .edit-content .gender em {
-	width: 22px;
-	height: 22px;
-	display: none;
-	background: url(../images/icon.png) no-repeat -314px -156px;
-	position: absolute;
-	right: 0;
-	bottom: 0;
+    width: 22px;
+    height: 22px;
+    display: none;
+    background: url(../images/icon.png) no-repeat -314px -156px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .editbox .edit-content .gender i {
-	width: 15px;
-	height: 15px;
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
 .editbox .edit-content .gender i.icon-male {
-	background: url(../images/icon.png) no-repeat -315px -136px;
+    background: url(../images/icon.png) no-repeat -315px -136px;
 }
 
 .editbox .edit-content .gender i.icon-female {
-	background: url(../images/icon.png) no-repeat -373px -136px;
+    background: url(../images/icon.png) no-repeat -373px -136px;
 }
 
 .editbox .edit-content .on {
-	width: 146px;
-	height: 36px;
-	line-height: 36px;
-	border: 2px solid #23cdb7;
-	color: #23cdb7;
+    width: 146px;
+    height: 36px;
+    line-height: 36px;
+    border: 2px solid #23cdb7;
+    color: #23cdb7;
 }
 
 .editbox .edit-content .on em {
-	display: block;
+    display: block;
 }
 
 .editbox .edit-content .on i.icon-male {
-	background: url(../images/icon.png) no-repeat -339px -136px;
+    background: url(../images/icon.png) no-repeat -339px -136px;
 }
 
 .editbox .edit-content .on i.icon-female {
-	background: url(../images/icon.png) no-repeat -398px -136px;
+    background: url(../images/icon.png) no-repeat -398px -136px;
 }
 
 .editbox .edit-content .error-tips {
-	padding: 0 20px;
-	height: 30px;
-	display: block;
-	line-height: 25px;
-	color: #f9844b;
-	font-size: 12px;
-	text-align: center;
+    padding: 0 20px;
+    height: 30px;
+    display: block;
+    line-height: 25px;
+    color: #f9844b;
+    font-size: 12px;
+    text-align: center;
 }
 
 .editbox .edit-btns {
-	width: 100%;
-	height: auto;
-	padding-bottom: 30px;
-	border-radius: 0 0 5px 5px;
-	background: #fff;
-	text-align: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    border-radius: 0 0 5px 5px;
+    background: #fff;
+    text-align: center;
 }
 
 .editbox .edit-btns a {
-	width: 160px;
-	height: 40px;
-	line-height: 40px;
-	display: inline-block;
-	background: #23cdb7;
-	color: #ffffff;
-	border-radius: 5px;
-	box-shadow: 2px 2px 0 #dedede;
-	margin: 0 50px;
-	font-size: 16px;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    background: #23cdb7;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 #dedede;
+    margin: 0 50px;
+    font-size: 16px;
 }
 
 .editbox .edit-btns a:hover {
-	background: #1bbba6;
+    background: #1bbba6;
 }
 
 
@@ -201,24 +201,28 @@
 
 /*审核驳回*/
 
-  span {
-	width: 100%;
-	height: 100%;
+span {
+    width: 100%;
+    height: 100%;
 }
 
-  span img {
-	vertical-align: middle
+span img {
+    vertical-align: middle
 }
 
 .reject {
-	color: rgba(197, 145, 120, 1);
+    color: rgba(197, 145, 120, 1);
 }
 
 
 /*审核通过*/
 
 .success {
-	color: rgba(103, 156, 95, 1);
+    color: rgba(103, 156, 95, 1);
+}
+
+.examineSuccess {
+    margin: 14px 0;
 }
 
 
@@ -227,12 +231,12 @@
 */
 
 .pendingAudit {
-	color: rgba(75, 108, 185, 1);
+    color: rgba(75, 108, 185, 1);
 }
 
 .tbody {
-	padding: 0!important;
-	line-height: 37px!important;
+    padding: 0!important;
+    line-height: 37px!important;
 }
 
 
@@ -242,152 +246,179 @@
 /*审核标题*/
 
 .examineTitle {
-	width: 100%;
-	height: auto;
-	display: flex;
-	margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
 }
 
 .examineTitle div {
-	width: 30%;
-	color: rgba(183, 188, 197, 1);
-	padding: 20px 0;
-	text-align: center;
-	margin: 0 auto;
+    width: 30%;
+    color: rgba(183, 188, 197, 1);
+    padding: 20px 0;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .examineTitle div span {
-	color: rgba(100, 108, 124, 1)
+    color: rgba(100, 108, 124, 1)
 }
 
 
 /*信息驳回内容展示*/
 
 .examineConter {
-	width: 80%!important;
-	margin: 0 auto;
-	border: 1px #E7EDF6 solid;
-	height: auto;
-	font-size: 14px;
-	font-family: "微软雅黑";
+    width: 80%!important;
+    margin: 0 auto;
+    border: 1px #E7EDF6 solid;
+    height: auto;
+    font-size: 14px;
+    font-family: "微软雅黑";
 }
 
 .examineConter p {
-	padding-left:53px;
-	color: #2D384A;
-	font-family: "微软雅黑";
-	font-size: 14px;
+    padding-left: 53px;
+    color: #2D384A;
+    font-family: "微软雅黑";
+    font-size: 14px;
 }
+
+.examineReject {
+    margin: 14px 0;
+}
+
+
 /*医院简介*/
-.infoText{
-	display: flex;
-	width: 100%;
+
+.infoText {
+    display: flex;
+    width: 100%;
 }
-.infoText p:nth-child(1){
-	width:20%;
-	padding-left:53px;
-	}
-	.infoText p:nth-child(2){
-	text-align: left;
-	 padding:0!important;
-	}
+
+.infoText p:nth-child(1) {
+    width: 75px;
+    padding-left: 53px;
+}
+
+.infoText p:nth-child(2) {
+    text-align: left;
+    padding: 0!important;
+    flex: 1;
+}
+
+
 /*医院图片*/
 
 .shide {
-	display: flex;
-	width: 100%;
-	height: auto;
-	color: rgba(45, 56, 74, 1);
-	padding: 0 53px;
-	font-family: "微软雅黑";
-	font-size: 14px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    color: rgba(45, 56, 74, 1);
+    padding: 0 53px;
+    font-family: "微软雅黑";
+    font-size: 14px;
 }
 
-.hospitalPImg {}
-
 .hospitalImg {
-	width: 80%;
-	height: auto;
-	overflow: hidden;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
 }
 
 .hospitalImg ul {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .hospitalImg ul li {
-	width: 30%;
-	vertical-align: middle;
-	margin: 0 5px;
-	padding: 5px 5px;
-	float: left;
+    width: 30%;
+    vertical-align: middle;
+    margin: 0 5px;
+    padding: 5px 5px;
+    float: left;
 }
 
 .hospitalImg ul li img {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 
 /*提示信息*/
 
 h1 {
-	text-align: center;
-	color: #E14D1F;
-	font-size: 18px;
-	padding: 10px 0;
+    text-align: center;
+    color: #E14D1F;
+    font-size: 18px;
+    padding: 10px 0;
 }
 
 .info {
-	border: 1px #E7EDF6 solid;
-	width: 80%;
-	height: 50px;
-	margin: 0 auto;
-	background: #fff;
+    border: 1px #E7EDF6 solid;
+    width: 80%;
+    height: 50px;
+    margin: 36px auto;
+    background: #fff;
 }
 
 .info p {
-	padding: 10px 10px;
+    padding: 10px 10px;
 }
 
 .info span {
-	color: #F9844B;
+    color: #F9844B;
 }
+
 
 /*审批意见*/
-.Opinion{
-	width:80%;
-	margin: 0 auto;
-	height: 120px;
-	display: flex;
-	position: relative;
-}
-.opinoinInfo{
-	font-size: 18px;
-}
-/*重置line-right 的属性*/
-.line-right{
-	padding-left: 3%!important;
-}
-.line-right .radios .radio{
-	padding:0 10px;
-}
-.textarea{
-	position: absolute;
-	top:25px;
-	width: 80%;
-	height: 80px;
-	margin-left:97px ;
-}
-.textarea textarea{
-	height: 100%;
-	padding: 0;
-	min-height: 50px;
+
+.Opinion {
+    width: 80%;
+    margin: 22px auto;
+    height: 120px;
+    display: flex;
+    position: relative;
 }
 
+.opinoinInfo {
+    font-size: 18px;
+}
+
+
+/*重置line-right 的属性*/
+
+.line-right {
+    margin-left: 3%;
+    padding: 0!important;
+}
+
+.line-right .radios .radio {
+    padding: 0 10px;
+}
+
+.textarea {
+    position: absolute;
+    top: 32px;
+    width: 80%;
+    height: 80px;
+    margin-left: 97px;
+}
+
+.textarea textarea {
+    height: 100%;
+    padding: 0;
+    min-height: 50px;
+}
+
+
 /*提交按钮*/
-.submit{
-	width:100%;
-	margin: 0 auto;
+
+.submit {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.submit a {
+    display: block!important;
+    margin: 0 auto;
 }
