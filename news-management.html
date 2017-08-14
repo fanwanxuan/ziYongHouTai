@@ -82,11 +82,11 @@
             </div>
             <div class="content">
                 <div class="shortcut-btns">
-                    <a href="add-news.html" class="add"><i class="icon-add-news"></i>发布</a>
-                    <a class="classify"><i class="icon-classify"></i>删除</a>
-                    <a href="add-news.html" class="add"><i class="icon-add-news"></i>推送至轮播</a>
-                    <a href="add-news.html" class="add"><i class="icon-add-news"></i>推送至文字</a>
-                    <a href="add-news.html" class="add"><i class="icon-add-news"></i>版本管理</a>
+                    <a   href="add-news.html" class="add"><i class="icon-add-news"></i>发布</a>
+                    <a  class="classify"><i class="icon-classify"></i>删除</a>
+                    <a  class="pushCarousel"><i class="icon-add-news"></i>推送至轮播</a>
+                    <a  class="pushWords"><i class="icon-add-news"></i>推送至文字</a>
+                    <a  class="management" href="new-add-management.html"><i class="icon-management"></i>版本管理</a>
                 </div>
                 <div class="table">
                     <div class="thead">
@@ -242,5 +242,13 @@
         <div class="clear"></div>
     </section>
 </body>
+<script>
+	/*删除调用*/
+	    operation(".classify");
+	    /*推送至轮播调用*/
+	    pushCarousel(".pushCarousel");
+	    /*推送至文字调用*/
+	   pushWords(".pushWords");
+</script>	
 
 </html>

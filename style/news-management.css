@@ -31,3 +31,21 @@
 .table .cz{
 	width: 7%;
 }
+
+/*新增的样式  轮播新闻 文字新闻*/
+.message-content li{
+	margin: 0 auto;
+	display: table;
+}
+.message-content li img{
+	vertical-align: middle;
+	margin: 0 5px;
+}
+/*版本管理 图标*/
+ a i.icon-management {
+    background: url(../images/icon.png) no-repeat -298px -204px;
+}
+/*删除图标*/
+.main a i.icon-classify{
+	 background: url(../images/icon.png) no-repeat -188px -204px;
+}
