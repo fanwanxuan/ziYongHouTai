@@ -845,3 +845,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .show .select .icon-dropdown{
 	background-position: -451px -103px;
 }
+
+/*资金管理 返回上一级 icon图标*/
+.icon-back{
+	    background: url(../images/back.png) ;
+}
+.icon-tijiao{
+	 background: url(../images/tijiao.png) no-repeat center;
+}

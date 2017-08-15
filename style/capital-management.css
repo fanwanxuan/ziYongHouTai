@@ -1,0 +1,24 @@
+.table {
+	width: 100%;
+}
+.table  .jsrq,.table .jsbs ,.table .sjjg,.table .zje,.table .jgsd,.table .zhbsxf,.table .wxsxf,.table .gssy,.table .zt{
+	width:11%;
+}
+.table .tbody .zt{
+	color:#5b78be;
+}
+/*下拉列表框*/
+#select{
+	 width: 240px;
+    height: 40px;
+    border: 1px solid #d8dee3;
+}
+#select option{
+	border: 1px red solid;
+	display: block;
+}
+
+/*资金审核*/
+.table  .jgmc,.table .jsbs ,.table .jsje,.table .zstd,.table .wcbl,.table .tdsxf,.table .jgsd,.table .gssy,.table .dzqr ,.table .xq{
+	width:10%;
+}

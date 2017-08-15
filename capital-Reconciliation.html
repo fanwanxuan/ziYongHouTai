@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>资金管理 - 芊浔体检管理系统</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" sizes="16x16" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="style/global.css?v=1.0" />
+	<link rel="stylesheet" type="text/css" href="style/capital-management.css" />
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript" src="script/global.js?v=1.0"></script>
+	<script type="text/javascript" src="script/institutional-management.js?v=1.0"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="script/html5.js"></script>
+	<! [endif]-->
+</head>
+<body>
+<section class="main">
+	<div class="main-left">
+		<div class="logo"><i></i></div>
+		<nav class="nav">
+			<div class="nav-box">
+				<div class="menu"><a href="institutional-management.html"><i class="icon-jg"></i>机构管理</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="user-management.html"><i class="icon-yh"></i>用户管理</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="news-management.html"><i class="icon-xw"></i>新闻管理</a></div>
+					<div class="subnav">
+					<a href="javascript:;" class="on"><span><i></i></span>资金统计</a>
+					<a href="persons.html"><span><i></i></span>人数统计</a>
+					<a href="order.html"><span><i></i></span>订单统计</a>
+				</div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="banner.html"><i class="icon-banner"></i>banner管理</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="javascript:;"><i class="icon-zj"></i>数据统计</a></div>
+				<div class="subnav">
+					<a href="javascript:;" ><span><i></i></span>资金统计</a>
+					<a href="persons.html"><span><i></i></span>人数统计</a>
+					<a href="order.html"><span><i></i></span>订单统计</a>
+				</div>
+			</div>
+			<div class="nav-box now ">
+				<div class="menu"><a href="javascript:;"><i class="icon-zj"></i>资金管理</a></div>
+				<div class="subnav">
+					<a href="capital-management.html"  class="on"><span><i></i></span>结算明细</a>
+					<a href="capital-Refund-details.html" ><span><i></i></span>退款明细</a>
+					<a href="capital-Institutional-details.html"><span><i></i></span>机构明细</a>
+				</div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="order-management.html"><i class="icon-dd"></i>订单管理</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="notice.html"><i class="icon-xt"></i>系统设置</a></div>
+			</div>
+			<div class="nav-box">
+				<div class="menu"><a href="authority.html"><i class="icon-qx"></i>权限管理</a></div>
+			</div>
+		</nav>
+	</div>
+		<div class="main-right">
+		<div class="main-top">
+			<div class="top-menu">
+				<a href="javascript:;" title="退出"><i class="icon-logout"></i></a>
+				<a href="javascript:;" title="修改密码"><i class="icon-changepassword"></i></a>
+				<span>Welcome，芊浔</span><span>2017年06月12日<em>14:28:00</em></span>
+			</div>
+			<div class="sys-name">芊浔体检管理后台</div>
+		</div>
+		<div class="find">
+			<div class="input-box">结算状态：
+			   <select name="" id="select">
+			   	<option value="" selected="selected">全部</option>
+			    <option value="">生成中</option>
+			   	<option value="">已生成</option>
+			   	<option value="">打款中</option>
+			   </select>
+			</div>
+			<a href="javascript:;" class="find-btn"><i class="icon-search"></i>查找</a>
+		</div>
+		<div class="content">
+			<div class="shortcut-btns">
+				<a href="javascript:history.go(-1);"><i class="icon-back"></i>返回上一级</a>
+				<a href="javascript:;"><i class="icon-tijiao"></i>提交结算</a>
+			</div>
+			<div class="table">
+				<div class="thead">
+					<div class="row">
+						<div class="jgmc">机构名称</div>
+						<div class="jsbs">结算笔数</div>
+						<div class="jsje">结算金额</div>
+						<div class="zstd">结算通道</div>
+						<div class="wcbl">分成比例</div>
+						<div class="tdsxf">通道手续费</div>
+						<div class="jgsd">机构所得</div>
+						<div class="gssy">公司收益</div>
+						<div class="dzqr">对账确认</div>
+						<div class="xq">详情</div>
+					</div>
+				</div>
+				<div class="tbody">
+					<div class="row">
+						<div class="jgmc">成都军区八一骨科 医院体检中心 </div>
+						<div class="jsbs">500笔</div>
+						<div class="jsje">500</div>
+						<div class="zstd">支付宝</div>
+						<div class="wcbl">10%</div>
+						<div class="tdsxf">22元</div>
+						<div class="jgsd">22元</div>
+						<div class="gssy">22元</div>
+						<div class="dzqr">已确认</div>
+						<div class="xq">V</div>
+					</div>
+					<div class="row">
+						<div class="jgmc">成都军区八一骨科 医院体检中心 </div>
+						<div class="jsbs">500笔</div>
+						<div class="jsje">500</div>
+						<div class="zstd">支付宝</div>
+						<div class="wcbl">10%</div>
+						<div class="tdsxf">22元</div>
+						<div class="jgsd">22元</div>
+						<div class="gssy">22元</div>
+						<div class="dzqr">已确认</div>
+						<div class="xq">V</div>
+					</div>
+					<div class="row">
+						<div class="jgmc">成都军区八一骨科 医院体检中心 </div>
+						<div class="jsbs">500笔</div>
+						<div class="jsje">500</div>
+						<div class="zstd">支付宝</div>
+						<div class="wcbl">10%</div>
+						<div class="tdsxf">22元</div>
+						<div class="jgsd">22元</div>
+						<div class="gssy">22元</div>
+						<div class="dzqr">已确认</div>
+						<div class="xq">V</div>
+					</div>
+					<div class="row">
+						<div class="jgmc">成都军区八一骨科 医院体检中心 </div>
+						<div class="jsbs">500笔</div>
+						<div class="jsje">500</div>
+						<div class="zstd">支付宝</div>
+						<div class="wcbl">10%</div>
+						<div class="tdsxf">22元</div>
+						<div class="jgsd">22元</div>
+						<div class="gssy">22元</div>
+						<div class="dzqr">已确认</div>
+						<div class="xq">V</div>
+					</div>
+					<div class="row">
+						<div class="jgmc">成都军区八一骨科 医院体检中心 </div>
+						<div class="jsbs">500笔</div>
+						<div class="jsje">500</div>
+						<div class="zstd">支付宝</div>
+						<div class="wcbl">10%</div>
+						<div class="tdsxf">22元</div>
+						<div class="jgsd">22元</div>
+						<div class="gssy">22元</div>
+						<div class="dzqr">已确认</div>
+						<div class="xq">V</div>
+					</div>
+					<div class="row">
+						<div class="jgmc">成都军区八一骨科 医院体检中心 </div>
+						<div class="jsbs">500笔</div>
+						<div class="jsje">500</div>
+						<div class="zstd">支付宝</div>
+						<div class="wcbl">10%</div>
+						<div class="tdsxf">22元</div>
+						<div class="jgsd">22元</div>
+						<div class="gssy">22元</div>
+						<div class="dzqr">已确认</div>
+						<div class="xq">V</div>
+					</div>
+				</div>
+			</div>
+			<div class="page">
+				共128条记录
+				<a href="javascript:;" title="上一页" class="prev">上一页</a>
+				<span class="on">1</span>
+				<a href="javascript:;">2</a>
+				<a href="javascript:;">3</a>
+				<a href="javascript:;">4</a>
+				<a href="javascript:;">5</a>
+				<span>...</span>
+				<a href="javascript:;">12</a>
+				<a href="javascript:;">13</a>
+				<a href="javascript:;" title="下一页" class="next">下一页</a>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</section>
+</body>
+</html>
