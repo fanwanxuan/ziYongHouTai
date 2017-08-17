@@ -10,10 +10,10 @@
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 	<link rel="icon" sizes="16x16" href="/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="style/global.css?v=1.0" />
-	<link rel="stylesheet" type="text/css" href="style/funds.css?v=1.0" />
+	<link rel="stylesheet" type="text/css" href="style/capital-management.css" />
 	<script type="text/javascript" src="script/jquery.js"></script>
 	<script type="text/javascript" src="script/global.js?v=1.0"></script>
-	<script type="text/javascript" src="script/funds.js?v=1.0"></script>
+	<script type="text/javascript" src="script/institutional-management.js?v=1.0"></script>
 	<!--[if lte IE 9]>
 	<script type="text/javascript" src="script/html5.js"></script>
 	<! [endif]-->
@@ -51,7 +51,7 @@
 			<div class="nav-box now ">
 				<div class="menu"><a href="javascript:;"><i class="icon-zj"></i>资金管理</a></div>
 				<div class="subnav">
-					<a href="capital-management.html" ><span><i></i></span>结算明细</a>
+					<a href="capital-management.html"  ><span><i></i></span>结算明细</a>
 					<a href="capital-Refund-details.html" class="on"><span><i></i></span>退款明细</a>
 					<a href="capital-Institutional-details.html"><span><i></i></span>机构明细</a>
 				</div>
@@ -67,7 +67,7 @@
 			</div>
 		</nav>
 	</div>
-	<div class="main-right">
+		<div class="main-right">
 		<div class="main-top">
 			<div class="top-menu">
 				<a href="javascript:;" title="退出"><i class="icon-logout"></i></a>
@@ -76,189 +76,124 @@
 			</div>
 			<div class="sys-name">芊浔体检管理后台</div>
 		</div>
+		<div class="find">
+			<div class="input-box">结算状态：
+			   <select name="" id="select">
+			   	<option value="" selected="selected">全部</option>
+			    <option value="">生成中</option>
+			   	<option value="">已生成</option>
+			   	<option value="">打款中</option>
+			   </select>
+			</div>
+			<a href="javascript:;" class="find-btn"><i class="icon-search"></i>查找</a>
+		</div>
 		<div class="content">
-			<div class="filter">
-				<div class="filter-btns">
-					<a href="javascript:;">本月</a>
-					<a href="javascript:;">本季</a>
-					<a href="javascript:;">本年</a>
-					<a href="javascript:;" class="on">总览</a>
+			<div class="shortcut-btns">
+				<a href="javascript:history.go(-1);"><i class="icon-back"></i>返回上一级</a>
+				<a href="capital-Settlement.html"><i class="icon-tijiao"></i>提交结算</a>
+			</div>
+			<div class="table">
+				<div class="thead">
+					<div class="row">
+						<div class="jgmc">退款日期</div>
+						<div class="jsbs">验证码</div>
+						<div class="jsje">所属订单号</div>
+						<div class="zstd">联系人</div>
+						<div class="wcbl">联系人电话</div>
+						<div class="tdsxf">套餐金额</div>
+						<div class="jgsd">付款方式</div>
+						<div class="gssy">退款账号</div>
+						<div class="dzqr">体检人信息</div>
+						<div class="xq">退款状态</div>
+					</div>
 				</div>
-				<div class="details">
-					<a href="receipt.html"><i class="icon-receipt"></i>机构收款明细</a>
-					<a href="refunds.html"><i class="icon-refunds"></i>退款明细</a>
-				</div>
-				<div class="switch">
-					<a href="javascript:;" class="prev"></a>
-					<span class="now"></span>
-					<a href="javascript:;" class="next"></a>
+				<div class="tbody">
+					<div class="row">
+						<div class="jgmc">2015-02-17</div>
+						<div class="jsbs">Xl521025522</div>
+						<div class="jsje">Xl521025522</div>
+						<div class="zstd">王鑫</div>
+						<div class="wcbl">13555555555</div>
+						<div class="tdsxf">120</div>
+						<div class="jgsd">微信</div>
+						<div class="gssy">123456789@qq.com</div>
+						<div class="dzqr">查看</div>
+						<div class="xq">成功</div>
+					</div>
+					<div class="row">
+						<div class="jgmc">2015-02-17</div>
+						<div class="jsbs">Xl521025522</div>
+						<div class="jsje">Xl521025522</div>
+						<div class="zstd">王鑫</div>
+						<div class="wcbl">13555555555</div>
+						<div class="tdsxf">120</div>
+						<div class="jgsd">微信</div>
+						<div class="gssy">123456789@qq.com</div>
+						<div class="dzqr">查看</div>
+						<div class="xq">成功</div>
+					</div>
+					<div class="row">
+						<div class="jgmc">2015-02-17</div>
+						<div class="jsbs">Xl521025522</div>
+						<div class="jsje">Xl521025522</div>
+						<div class="zstd">王鑫</div>
+						<div class="wcbl">13555555555</div>
+						<div class="tdsxf">120</div>
+						<div class="jgsd">微信</div>
+						<div class="gssy">123456789@qq.com</div>
+						<div class="dzqr">查看</div>
+						<div class="xq">成功</div>
+					</div>
+					<div class="row">
+						<div class="jgmc">2015-02-17</div>
+						<div class="jsbs">Xl521025522</div>
+						<div class="jsje">Xl521025522</div>
+						<div class="zstd">王鑫</div>
+						<div class="wcbl">13555555555</div>
+						<div class="tdsxf">120</div>
+						<div class="jgsd">微信</div>
+						<div class="gssy">123456789@qq.com</div>
+						<div class="dzqr">查看</div>
+						<div class="xq">成功</div>
+					</div>
+					<div class="row">
+						<div class="jgmc">2015-02-17</div>
+						<div class="jsbs">Xl521025522</div>
+						<div class="jsje">Xl521025522</div>
+						<div class="zstd">王鑫</div>
+						<div class="wcbl">13555555555</div>
+						<div class="tdsxf">120</div>
+						<div class="jgsd">微信</div>
+						<div class="gssy">123456789@qq.com</div>
+						<div class="dzqr">查看</div>
+						<div class="xq">成功</div>
+					</div>
+					<div class="row">
+						<div class="jgmc">2015-02-17</div>
+						<div class="jsbs">Xl521025522</div>
+						<div class="jsje">Xl521025522</div>
+						<div class="zstd">王鑫</div>
+						<div class="wcbl">13555555555</div>
+						<div class="tdsxf">120</div>
+						<div class="jgsd">微信</div>
+						<div class="gssy">123456789@qq.com</div>
+						<div class="dzqr">查看</div>
+						<div class="xq">成功</div>
+					</div>
 				</div>
 			</div>
-			<div class="overview">
-				<div class="overview-box">
-					<i class="icon-data-money"></i>
-					<h1>总交易金额</h1>
-					<li><em>￥</em>30,175</li>
-				</div>
-				<div class="overview-box">
-					<i class="icon-data-turnover"></i>
-					<h1>资金池流水</h1>
-					<li><em>￥</em>30,175</li>
-				</div>
-				<div class="overview-box">
-					<i class="icon-data-expenditure"></i>
-					<h1>已划入机构总金额</h1>
-					<li><em>￥</em>20,175</li>
-				</div>
-				<div class="overview-box">
-					<i class="icon-data-refunds"></i>
-					<h1>退款金额</h1>
-					<li><em>￥</em>7,175</li>
-				</div>
-				<div class="overview-box">
-					<i class="icon-data-income"></i>
-					<h1>平台收益</h1>
-					<li><em>￥</em>3,175</li>
-				</div>
-			</div>
-			<!--总览-->
-			<div class="data-charts allview">
-				<div class="charts">
-					<div class="charts-name"><i class="icon-charts-yellow"></i>机构交易量<span>(万元）/ 前五</span></div>
-					<div class="charts-box"></div>
-				</div>
-				<div class="charts">
-					<div class="charts-name"><i class="icon-charts-blue"></i>机构收益<span>(万元）/ 前五</span></div>
-					<div class="charts-box"></div>
-				</div>
-				<div class="charts">
-					<div class="charts-name"><i class="icon-charts-red"></i>城市交易量排名<span>前五</span></div>
-					<div class="charts-box"></div>
-				</div>
-				<div class="charts">
-					<div class="charts-name"><i class="icon-charts-green"></i>退款机构排名<span>(万元）/ 前五</span></div>
-					<div class="charts-box"></div>
-				</div>
-			</div>
-			<div class="filter-data">
-				<div class="data-box">
-					<!--按月-->
-					<div class="data-chart data-month">
-						<div class="charts yellow">
-							<div class="charts-name">
-								<div class="change"><a href="javascript:;" class="on">按周显示</a><a href="javascript:;">按日显示</a></div>
-								<i class="icon-charts-yellow"></i>交易金额<span>(千元）</span>
-							</div>
-							<div class="charts-box"></div>
-						</div>
-						<div class="charts green">
-							<div class="charts-name">
-								<div class="change"><a href="javascript:;" class="on">按周显示</a><a href="javascript:;">按日显示</a></div>
-								<i class="icon-charts-green"></i>体检人数<span>(位）</span>
-							</div>
-							<div class="charts-box"></div>
-						</div>
-					</div>
-					<!--按季-->
-					<div class="data-chart data-quarterly">
-						<div class="charts yellow">
-							<div class="charts-name">
-								<div class="change"><a href="javascript:;" class="on">按月显示</a><a href="javascript:;">按周显示</a></div>
-								<i class="icon-charts-yellow"></i>交易金额<span>(千元）</span>
-							</div>
-							<div class="charts-box"></div>
-						</div>
-						<div class="charts green">
-							<div class="charts-name">
-								<div class="change"><a href="javascript:;" class="on">按月显示</a><a href="javascript:;">按周显示</a></div>
-								<i class="icon-charts-green"></i>体检人数<span>(位）</span>
-							</div>
-							<div class="charts-box"></div>
-						</div>
-					</div>
-					<!--按年-->
-					<div class="data-chart data-year">
-						<div class="charts yellow">
-							<div class="charts-name">
-								<div class="change"><a href="javascript:;" class="on">按季显示</a><a href="javascript:;">按月显示</a></div>
-								<i class="icon-charts-yellow"></i>交易金额<span>(千元）</span>
-							</div>
-							<div class="charts-box"></div>
-						</div>
-						<div class="charts green">
-							<div class="charts-name">
-								<div class="change"><a href="javascript:;" class="on">按季显示</a><a href="javascript:;">按月显示</a></div>
-								<i class="icon-charts-green"></i>体检人数<span>(位）</span>
-							</div>
-							<div class="charts-box"></div>
-						</div>
-					</div>
-				</div>
-				<div class="rank">
-					<div class="ranking yellow">
-						<div class="rank-name">
-							<span>机构交易金额排名</span>
-						</div>
-						<div class="rank-list">
-							<div class="num">
-								<li><i class="first">1</i></li>
-								<li><i class="second">2</i></li>
-								<li><i class="third">3</i></li>
-								<li><i class="fourth">4</i></li>
-								<li><i class="fifth">5</i></li>
-							</div>
-							<div class="name">
-								<li><em class="amount">¥ 5800.00</em><span>成都八一军区骨科医院体检中心</span></li>
-								<li><em class="amount">¥ 5200.00</em><span>成都爱康国宾体检中心（城南分院）</span></li>
-								<li><em class="amount">¥ 5000.00</em><span>成都美年大健康体检中心（高新1分院）</span></li>
-								<li><em class="amount">¥ 4800.00</em><span>成都市臻熙健康体检中心</span></li>
-								<li><em class="amount">¥ 4000.00</em><span>武警四川消防总队医院体检中心</span></li>
-							</div>
-						</div>
-					</div>
-					<div class="ranking green">
-						<div class="rank-name">
-							<span>体检机构人数排名</span>
-						</div>
-						<div class="rank-list">
-							<div class="num">
-								<li><i class="first">1</i></li>
-								<li><i class="second">2</i></li>
-								<li><i class="third">3</i></li>
-								<li><i class="fourth">4</i></li>
-								<li><i class="fifth">5</i></li>
-							</div>
-							<div class="name">
-								<li><em class="amount">14874</em><span>成都八一军区骨科医院体检中心</span></li>
-								<li><em class="amount">10520</em><span>成都爱康国宾体检中心（城南分院）</span></li>
-								<li><em class="amount">8921</em><span>成都美年大健康体检中心（高新1分院）</span></li>
-								<li><em class="amount">8556</em><span>成都市臻熙健康体检中心</span></li>
-								<li><em class="amount">5252</em><span>武警四川消防总队医院体检中心</span></li>
-							</div>
-						</div>
-					</div>
-					<div class="ranking blue">
-						<div class="rank-name">
-							<span>机构收益排名</span>
-						</div>
-						<div class="rank-list">
-							<div class="num">
-								<li><i class="first">1</i></li>
-								<li><i class="second">2</i></li>
-								<li><i class="third">3</i></li>
-								<li><i class="fourth">4</i></li>
-								<li><i class="fifth">5</i></li>
-							</div>
-							<div class="name">
-								<li><em class="amount">¥ 5800.00</em><span>成都八一军区骨科医院体检中心</span></li>
-								<li><em class="amount">¥ 5200.00</em><span>成都爱康国宾体检中心（城南分院）</span></li>
-								<li><em class="amount">¥ 5000.00</em><span>成都美年大健康体检中心（高新1分院）</span></li>
-								<li><em class="amount">¥ 4800.00</em><span>成都市臻熙健康体检中心</span></li>
-								<li><em class="amount">¥ 4000.00</em><span>武警四川消防总队医院体检中心</span></li>
-							</div>
-						</div>
-					</div>
-				</div>
+			<div class="page">
+				共128条记录
+				<a href="javascript:;" title="上一页" class="prev">上一页</a>
+				<span class="on">1</span>
+				<a href="javascript:;">2</a>
+				<a href="javascript:;">3</a>
+				<a href="javascript:;">4</a>
+				<a href="javascript:;">5</a>
+				<span>...</span>
+				<a href="javascript:;">12</a>
+				<a href="javascript:;">13</a>
+				<a href="javascript:;" title="下一页" class="next">下一页</a>
 			</div>
 		</div>
 	</div>

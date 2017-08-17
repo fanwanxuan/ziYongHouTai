@@ -110,7 +110,7 @@
 	padding:4px 4px;
 	width:80px;
 }
- /*===ÔÂÀú==*/
+ /*===ï¿½ï¿½ï¿½ï¿½==*/
 table.calendar-month {
 	font-size: 12px;
 	float:left;
@@ -130,11 +130,11 @@ table.calendar-month {
 	padding: 4px 11px;
 	text-align:center;
 	white-space:nowrap;
-	font-family:"Î¢ÈíÑÅºÚ";
+	font-family:"Î¢ï¿½ï¿½ï¿½Åºï¿½";
 	cursor:pointer;
 }
 .calendar-month td.hover,.calendar-month td:hover,.calendar-month caption span:hover{
-	background:#;
+	/*background:#;*/
 	color:#6590c1;
 	border:1px solid #6590c1;
 	padding: 3px 10px;

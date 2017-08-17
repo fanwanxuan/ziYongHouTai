@@ -4,6 +4,7 @@
 .table  .jsrq,.table .jsbs ,.table .sjjg,.table .zje,.table .jgsd,.table .zhbsxf,.table .wxsxf,.table .gssy,.table .zt{
 	width:11%;
 }
+
 .table .tbody .zt{
 	color:#5b78be;
 }
@@ -20,5 +21,121 @@
 
 /*资金审核*/
 .table  .jgmc,.table .jsbs ,.table .jsje,.table .zstd,.table .wcbl,.table .tdsxf,.table .jgsd,.table .gssy,.table .dzqr ,.table .xq{
-	width:10%;
+	width:9%;
+	text-indent: 1em;
+}
+.table  .gssy{
+	width:14%;
+}
+
+/*资金审核icon*/
+.table .xq  .showLst{
+	background: url(../images/icon.png) -334px -89px;
+	transform:rotate(270deg);
+	-ms-transform:rotate(270deg); 	/* IE 9 */
+	-moz-transform:rotate(270deg); 	/* Firefox */
+	-webkit-transform:rotate(270deg); /* Safari 和 Chrome */
+	-o-transform:rotate(270deg); 	
+	width:50%;
+	display: inline-block;
+	height: 20px;
+	
+}
+.table .xq  .top{
+	transform:rotate(-270deg);
+	-ms-transform:rotate(-270deg); 	/* IE 9 */
+	-moz-transform:rotate(-270deg); 	/* Firefox */
+	-webkit-transform:rotate(-270deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-270deg);
+}
+/*展开或隐藏列表*/
+.table .tbody .OpenOrHide{
+	width: 100%;
+	height: auto;
+	background: #e1e1e1;
+	display: none;
+	
+}
+/*强行禁止hover*/
+.OpenOrHidebody:hover{
+	background: #e1e1e1!important;
+}
+.OpenOrHideHeader{
+	width: 100%;
+	background: #ccc;
+	text-align: left!important;
+}
+.OpenOrHideHeader div,.OpenOrHidebody div{
+	width: 12.5%;
+	
+}
+.table .tbody .dzqr{
+	color:#5b78be;
+}
+.OpenOrHidebody{
+	display: block!important;
+	border-bottom: 1px #ccc solid;
+}
+/*重置table .row*/
+.table .row{
+	margin: 0!important;
+	padding: 0!important;
+}
+.system-message .message-content {
+	text-align: center;
+}
+/*横线*/
+.Line{
+		border-top: 1px #e1e2e7 solid;
+}
+/*重置探矿 ul*/
+body .system-message .message-content ul {
+    list-style: none;
+    counter-reset: count;
+   padding: 20px 0px 20px 0px;
+}
+.system-message .message-content ul li{
+	width: 63%;
+	text-align: left;
+	margin: 15px auto;
+}
+
+.system-message .message-content ul li::before {
+	/*list-style: disc;*/
+	content:'\02022';
+	color:#1bbba6;
+	margin-left:10px;
+	
+}
+/*人工调账*/
+.adjustment{
+	width: 100%;
+	height: 286px;
+}
+/*重置textare的样式*/
+.marks{
+ 	text-align: center;
+ 	height: 142px;
+ 	display: flex;
+ 	width: 62%;
+ 	margin: 0px auto;
+ 
+ }
+.marks textarea {
+    width: 75%;
+}
+.marks span{
+	line-height: 1;
+}
+/*结算金额*/
+body .amount{
+	margin: 14px 0;
+	padding: 5px 0;
+	width:68%;
+		
+	/*bordeR:1px red solid;*/
+	
+}
+.hide{
+	display: none;
 }

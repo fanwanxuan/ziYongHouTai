@@ -10,7 +10,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 	<link rel="icon" sizes="16x16" href="/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="style/global.css?v=1.0" />
-	<link rel="stylesheet" type="text/css" href="style/institutional-management.css?v=1.0" />
+	<link rel="stylesheet" type="text/css" href="style/capital-management.css" />
 	<script type="text/javascript" src="script/jquery.js"></script>
 	<script type="text/javascript" src="script/global.js?v=1.0"></script>
 	<script type="text/javascript" src="script/institutional-management.js?v=1.0"></script>
@@ -51,7 +51,7 @@
 			<div class="nav-box now ">
 				<div class="menu"><a href="javascript:;"><i class="icon-zj"></i>资金管理</a></div>
 				<div class="subnav">
-					<a href="capital-management.html" ><span><i></i></span>结算明细</a>
+					<a href="capital-management.html"  ><span><i></i></span>结算明细</a>
 					<a href="capital-Refund-details.html" ><span><i></i></span>退款明细</a>
 					<a href="capital-Institutional-details.html" class="on"><span><i></i></span>机构明细</a>
 				</div>
@@ -77,135 +77,108 @@
 			<div class="sys-name">芊浔体检管理后台</div>
 		</div>
 		<div class="find">
-			<div class="input-box">机构号：<input class="input" type="text" value="" placeholder="请输入" /></div>
-			<div class="input-box">机构名称：<input class="input" type="text" value="" placeholder="请输入" /></div>
+			<div class="input-box">结算状态：
+			   <select name="" id="select">
+			   	<option value="" selected="selected">全部</option>
+			    <option value="">生成中</option>
+			   	<option value="">已生成</option>
+			   	<option value="">打款中</option>
+			   </select>
+			</div>
 			<a href="javascript:;" class="find-btn"><i class="icon-search"></i>查找</a>
 		</div>
 		<div class="content">
 			<div class="shortcut-btns">
-				<a href="javascript:history.go(-1);"><i class="icon-back"></i>返回上一级</a>
-				<a href="javascript:;"><i class="icon-tijiao"></i>提交结算</a>
+				<a href="javascript:history.go(-1);"><i class="icon-back"></i>统计</a>
+				<a href="capital-Settlement.html"><i class="icon-tijiao"></i>导出</a>
 			</div>
 			<div class="table">
 				<div class="thead">
 					<div class="row">
-						<div class="jgh">机构号</div>
-						<div class="jgmc">机构名称</div>
-						<div class="lxdh">联系电话</div>
-						<div class="skfs">收款方式</div>
-						<div class="cz">操作</div>
+						<div class="jgmc">退款日期</div>
+						<div class="jsbs">验证码</div>
+						<div class="jsje">所属订单号</div>
+						<div class="zstd">联系人</div>
+						<div class="wcbl">联系人电话</div>
+						<div class="tdsxf">套餐金额</div>
+						<div class="jgsd">付款方式</div>
+						<div class="gssy">退款账号</div>
+						<div class="dzqr">体检人信息</div>
+						<div class="xq">退款状态</div>
 					</div>
 				</div>
 				<div class="tbody">
 					<div class="row">
-						<div class="jgh">CD00000010</div>
-						<div class="jgmc">成都军区八一骨科医院体检中心</div>
-						<div class="lxdh">028-15523456</div>
-						<div class="skfs">支付宝</div>
-						<div class="cz">
-							<a href="employee-management.html" title="人员管理" class="icon-rygl">人员管理</a>
-							<a href="javascript:;" title="编辑" class="icon-edit">编辑</a>
-							<a href="javascript:;" title="删除" class="icon-delete">删除</a>
-						</div>
+						<div class="jgmc">2015-02-17</div>
+						<div class="jsbs">Xl521025522</div>
+						<div class="jsje">Xl521025522</div>
+						<div class="zstd">王鑫</div>
+						<div class="wcbl">13555555555</div>
+						<div class="tdsxf">120</div>
+						<div class="jgsd">微信</div>
+						<div class="gssy">123456789@qq.com</div>
+						<div class="dzqr">查看</div>
+						<div class="xq">成功</div>
 					</div>
 					<div class="row">
-						<div class="jgh">CD00000009</div>
-						<div class="jgmc">成都爱康国宾体检中心（城南分院）</div>
-						<div class="lxdh">028-15523558</div>
-						<div class="skfs">微信</div>
-						<div class="cz">
-							<a href="employee-management.html" title="人员管理" class="icon-rygl">人员管理</a>
-							<a href="javascript:;" title="编辑" class="icon-edit">编辑</a>
-							<a href="javascript:;" title="删除" class="icon-delete">删除</a>
-						</div>
+						<div class="jgmc">2015-02-17</div>
+						<div class="jsbs">Xl521025522</div>
+						<div class="jsje">Xl521025522</div>
+						<div class="zstd">王鑫</div>
+						<div class="wcbl">13555555555</div>
+						<div class="tdsxf">120</div>
+						<div class="jgsd">微信</div>
+						<div class="gssy">123456789@qq.com</div>
+						<div class="dzqr">查看</div>
+						<div class="xq">成功</div>
 					</div>
 					<div class="row">
-						<div class="jgh">CD00000008</div>
-						<div class="jgmc">成都美年大健康体检中心（高新1分院）</div>
-						<div class="lxdh">028-52523653</div>
-						<div class="skfs">银行转账</div>
-						<div class="cz">
-							<a href="employee-management.html" title="人员管理" class="icon-rygl">人员管理</a>
-							<a href="javascript:;" title="编辑" class="icon-edit">编辑</a>
-							<a href="javascript:;" title="删除" class="icon-delete">删除</a>
-						</div>
+						<div class="jgmc">2015-02-17</div>
+						<div class="jsbs">Xl521025522</div>
+						<div class="jsje">Xl521025522</div>
+						<div class="zstd">王鑫</div>
+						<div class="wcbl">13555555555</div>
+						<div class="tdsxf">120</div>
+						<div class="jgsd">微信</div>
+						<div class="gssy">123456789@qq.com</div>
+						<div class="dzqr">查看</div>
+						<div class="xq">成功</div>
 					</div>
 					<div class="row">
-						<div class="jgh">CD00000007</div>
-						<div class="jgmc">成都军区八一骨科医院体检中心</div>
-						<div class="lxdh">028-54823157</div>
-						<div class="skfs">支付宝</div>
-						<div class="cz">
-							<a href="employee-management.html" title="人员管理" class="icon-rygl">人员管理</a>
-							<a href="javascript:;" title="编辑" class="icon-edit">编辑</a>
-							<a href="javascript:;" title="删除" class="icon-delete">删除</a>
-						</div>
+						<div class="jgmc">2015-02-17</div>
+						<div class="jsbs">Xl521025522</div>
+						<div class="jsje">Xl521025522</div>
+						<div class="zstd">王鑫</div>
+						<div class="wcbl">13555555555</div>
+						<div class="tdsxf">120</div>
+						<div class="jgsd">微信</div>
+						<div class="gssy">123456789@qq.com</div>
+						<div class="dzqr">查看</div>
+						<div class="xq">成功</div>
 					</div>
 					<div class="row">
-						<div class="jgh">CD00000006</div>
-						<div class="jgmc">成都第三人民医院</div>
-						<div class="lxdh">028-54823125</div>
-						<div class="skfs">微信</div>
-						<div class="cz">
-							<a href="employee-management.html" title="人员管理" class="icon-rygl">人员管理</a>
-							<a href="javascript:;" title="编辑" class="icon-edit">编辑</a>
-							<a href="javascript:;" title="删除" class="icon-delete">删除</a>
-						</div>
+						<div class="jgmc">2015-02-17</div>
+						<div class="jsbs">Xl521025522</div>
+						<div class="jsje">Xl521025522</div>
+						<div class="zstd">王鑫</div>
+						<div class="wcbl">13555555555</div>
+						<div class="tdsxf">120</div>
+						<div class="jgsd">微信</div>
+						<div class="gssy">123456789@qq.com</div>
+						<div class="dzqr">查看</div>
+						<div class="xq">成功</div>
 					</div>
 					<div class="row">
-						<div class="jgh">CD00000005</div>
-						<div class="jgmc">成都军区八一骨科医院体检中心</div>
-						<div class="lxdh">028-15523456</div>
-						<div class="skfs">支付宝</div>
-						<div class="cz">
-							<a href="employee-management.html" title="人员管理" class="icon-rygl">人员管理</a>
-							<a href="javascript:;" title="编辑" class="icon-edit">编辑</a>
-							<a href="javascript:;" title="删除" class="icon-delete">删除</a>
-						</div>
-					</div>
-					<div class="row">
-						<div class="jgh">CD00000004</div>
-						<div class="jgmc">成都爱康国宾体检中心（城南分院）</div>
-						<div class="lxdh">028-15523558</div>
-						<div class="skfs">微信</div>
-						<div class="cz">
-							<a href="employee-management.html" title="人员管理" class="icon-rygl">人员管理</a>
-							<a href="javascript:;" title="编辑" class="icon-edit">编辑</a>
-							<a href="javascript:;" title="删除" class="icon-delete">删除</a>
-						</div>
-					</div>
-					<div class="row">
-						<div class="jgh">CD00000003</div>
-						<div class="jgmc">成都美年大健康体检中心（高新1分院）</div>
-						<div class="lxdh">028-52523653</div>
-						<div class="skfs">银行转账</div>
-						<div class="cz">
-							<a href="employee-management.html" title="人员管理" class="icon-rygl">人员管理</a>
-							<a href="javascript:;" title="编辑" class="icon-edit">编辑</a>
-							<a href="javascript:;" title="删除" class="icon-delete">删除</a>
-						</div>
-					</div>
-					<div class="row">
-						<div class="jgh">CD00000002</div>
-						<div class="jgmc">成都军区八一骨科医院体检中心</div>
-						<div class="lxdh">028-54823157</div>
-						<div class="skfs">支付宝</div>
-						<div class="cz">
-							<a href="employee-management.html" title="人员管理" class="icon-rygl">人员管理</a>
-							<a href="javascript:;" title="编辑" class="icon-edit">编辑</a>
-							<a href="javascript:;" title="删除" class="icon-delete">删除</a>
-						</div>
-					</div>
-					<div class="row">
-						<div class="jgh">CD00000001</div>
-						<div class="jgmc">成都第三人民医院</div>
-						<div class="lxdh">028-54823125</div>
-						<div class="skfs">微信</div>
-						<div class="cz">
-							<a href="employee-management.html" title="人员管理" class="icon-rygl">人员管理</a>
-							<a href="javascript:;" title="编辑" class="icon-edit">编辑</a>
-							<a href="javascript:;" title="删除" class="icon-delete">删除</a>
-						</div>
+						<div class="jgmc">2015-02-17</div>
+						<div class="jsbs">Xl521025522</div>
+						<div class="jsje">Xl521025522</div>
+						<div class="zstd">王鑫</div>
+						<div class="wcbl">13555555555</div>
+						<div class="tdsxf">120</div>
+						<div class="jgsd">微信</div>
+						<div class="gssy">123456789@qq.com</div>
+						<div class="dzqr">查看</div>
+						<div class="xq">成功</div>
 					</div>
 				</div>
 			</div>

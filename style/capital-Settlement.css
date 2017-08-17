@@ -1,0 +1,30 @@
+body {
+    font: 14px/20px "Microsoft Yahei";
+}
+/*资金审核*/
+.table  .jgmc,.table .jsbs ,.table .jsje,.table .zstd,.table .wcbl,.table .tdsxf,.table .jgsd,.table .gssy,.table .dzqr ,.table .xq,.table .state{
+	width:9%;
+	text-indent: 1em;
+}
+
+
+/*资金审核icon*/
+.table .xq  .showLst{
+	background: url(../images/icon.png) -334px -89px;
+	transform:rotate(270deg);
+	-ms-transform:rotate(270deg); 	/* IE 9 */
+	-moz-transform:rotate(270deg); 	/* Firefox */
+	-webkit-transform:rotate(270deg); /* Safari 和 Chrome */
+	-o-transform:rotate(270deg); 	
+	width:50%;
+	display: inline-block;
+	height: 20px;
+	
+}
+
+.table .tbody .state{
+	color:#5b78be;
+}
+.table .tbody .dzqr{
+	color:#646c7c;
+}

@@ -10,7 +10,8 @@
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 	<link rel="icon" sizes="16x16" href="/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="style/global.css?v=1.0" />
-	<link rel="stylesheet" type="text/css" href="style/capital-management.css" />
+		<link rel="stylesheet" type="text/css" href="style/capital-management.css" />
+	<link rel="stylesheet" type="text/css" href="style/capital-Settlement.css" />
 	<script type="text/javascript" src="script/jquery.js"></script>
 	<script type="text/javascript" src="script/global.js?v=1.0"></script>
 	<script type="text/javascript" src="script/institutional-management.js?v=1.0"></script>
@@ -90,7 +91,6 @@
 		<div class="content">
 			<div class="shortcut-btns">
 				<a href="javascript:history.go(-1);"><i class="icon-back"></i>返回上一级</a>
-				<a href="capital-Settlement.html"><i class="icon-tijiao"></i>提交结算</a>
 			</div>
 			<div class="table">
 				<div class="thead">
@@ -103,8 +103,10 @@
 						<div class="tdsxf">通道手续费</div>
 						<div class="jgsd">机构所得</div>
 						<div class="gssy">公司收益</div>
-						<div class="dzqr">对账确认</div>
+						<div class="dzqr">打款方式</div>
+						<div class="state">状态</div>
 						<div class="xq">详情</div>
+						
 					</div>
 				</div>
 				<div class="tbody">
@@ -117,8 +119,10 @@
 						<div class="tdsxf">22元</div>
 						<div class="jgsd">22元</div>
 						<div class="gssy">22元</div>
-						<div class="dzqr">已确认</div>
+						<div class="dzqr">微信</div>
+						<div class="state" onclick="state('成功')">成功</div>
 						<div class="xq"><i class="showLst"></i></div>
+						
 						<!--展开显示-->
 						<div class="OpenOrHide">
 							<div class="OpenOrHideHeader">
@@ -182,8 +186,10 @@
 						<div class="tdsxf">22元</div>
 						<div class="jgsd">22元</div>
 						<div class="gssy">22元</div>
-						<div class="dzqr">已确认</div>
+						<div class="dzqr">微信</div>
+						<div class="state" onclick="state('失败')" >失败</div>
 						<div class="xq"><i class="showLst"></i></div>
+					
 						<!--展开显示-->
 						<div class="OpenOrHide">
 							<div class="OpenOrHideHeader">
@@ -247,8 +253,10 @@
 						<div class="tdsxf">22元</div>
 						<div class="jgsd">22元</div>
 						<div class="gssy">22元</div>
-						<div class="dzqr">已确认</div>
+						<div class="dzqr">微信</div>
+						<div class="state">成功</div>
 						<div class="xq"><i class="showLst"></i></div>
+						
 						<!--展开显示-->
 						<div class="OpenOrHide">
 							<div class="OpenOrHideHeader">
@@ -312,8 +320,10 @@
 						<div class="tdsxf">22元</div>
 						<div class="jgsd">22元</div>
 						<div class="gssy">22元</div>
-						<div class="dzqr">已确认</div>
+						<div class="dzqr">微信</div>
+						<div class="state">成功</div>
 						<div class="xq"><i class="showLst"></i></div>
+					
 						<!--展开显示-->
 						<div class="OpenOrHide">
 							<div class="OpenOrHideHeader">
@@ -377,8 +387,10 @@
 						<div class="tdsxf">22元</div>
 						<div class="jgsd">22元</div>
 						<div class="gssy">22元</div>
-						<div class="dzqr">已确认</div>
+						<div class="dzqr">微信</div>
+							<div class="state">成功</div>
 						<div class="xq"><i class="showLst"></i></div>
+					
 						<!--展开显示-->
 						<div class="OpenOrHide">
 							<div class="OpenOrHideHeader">
@@ -442,8 +454,10 @@
 						<div class="tdsxf">22元</div>
 						<div class="jgsd">22元</div>
 						<div class="gssy">22元</div>
-						<div class="dzqr">已确认</div>
+						<div class="dzqr">微信</div>
+						<div class="state">成功</div>
 						<div class="xq"><i class="showLst"></i></div>
+						
 						<!--展开显示-->
 						<div class="OpenOrHide">
 							<div class="OpenOrHideHeader">
@@ -518,5 +532,5 @@
 	<div class="clear"></div>
 </section>
 </body>
-<script type="text/javascript" src="script/capital-Reconciliation.js"></script>
+<script type="text/javascript" src="script/capital-Settlement.js"></script>
 </html>
